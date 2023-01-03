@@ -32,6 +32,14 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/ana_m2_armor.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }

@@ -16,7 +16,7 @@ class Mod
 		const itemData = require("../db/items/itemData.json");
 		
 		// edge cases
-		const edgeCases = ["AddGearVanExt_GEN4_Light", "AddGearVanExt_6B43_Light", "AddGearVanExt_6B43_Assault", "AddGearVanExt_6B43_Mobility"];
+		const edgeCases = ["AddGearVanExt_GEN4_Light", "AddGearVanExt_6B43_Light", "AddGearVanExt_6B43_Assault", "AddGearVanExt_6B43_Mobility", "AddGearVanExt_ANA_M2_Armor"];
 		
 		//add retextures
 		for (const categoryId in itemConfig) {
@@ -38,7 +38,8 @@ class Mod
 				["AddGearVanExt_GEN4_Light"],
 				["AddGearVanExt_6B43_Light"],
 				["AddGearVanExt_6B43_Assault"],
-				["AddGearVanExt_6B43_Mobility"]
+				["AddGearVanExt_6B43_Mobility"],
+				["AddGearVanExt_ANA_M2_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
@@ -104,7 +105,7 @@ class Mod
 		
 		// 6b43 light
 		if (itemConfig["Armored Vests"]["AddGearVanExt_6B43_Light"]) {
-			core.addItemRetexture(modDb, "AddGearVanExt_6B43_Light", itemData["AddGearVanExt_6B43_Light"].BaseItemID, itemData["AddGearVanExt_6B43_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_GEN4_Light"].LootWeigthMult);
+			core.addItemRetexture(modDb, "AddGearVanExt_6B43_Light", itemData["AddGearVanExt_6B43_Light"].BaseItemID, itemData["AddGearVanExt_6B43_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_6B43_Light"].LootWeigthMult);
 			
 			// change stats
 			const sixB43Light = database.templates.items["AddGearVanExt_6B43_Light"];
@@ -206,6 +207,61 @@ class Mod
 			
 			for (const handbookItemIndex in database.templates.handbook.Items) {
 				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_6B43_Mobility") {
+					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
+					break;
+				}
+			}
+		}
+		
+		// 6b43 mobility
+		if (itemConfig["Armored Vests"]["AddGearVanExt_ANA_M2_Armor"]) {
+			core.addItemRetexture(modDb, "AddGearVanExt_ANA_M2_Armor", itemData["AddGearVanExt_ANA_M2_Armor"].BaseItemID, itemData["AddGearVanExt_ANA_M2_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_ANA_M2_Armor"].LootWeigthMult);
+			const anaM2Armor = database.templates.items["AddGearVanExt_ANA_M2_Armor"];
+			const anaM2Rig = database.templates.items["5ab8dced86f774646209ec87"];
+			
+			// change stats
+			if (anaM2Rig._props.Weight > 0) {
+				anaM2Armor._props.Weight = anaM2Rig._props.Weight - 1;
+			} else {
+				anaM2Armor._props.Weight = anaM2Rig._props.Weight;
+			}
+			
+			anaM2Armor._props.Width = anaM2Rig._props.Width;
+			anaM2Armor._props.Height = anaM2Rig._props.Height;
+			anaM2Armor._props.RepairCost = anaM2Rig._props.RepairCost;
+			anaM2Armor._props.CanSellOnRagfair = anaM2Rig._props.CanSellOnRagfair;
+			anaM2Armor._props.Durability = anaM2Rig._props.Durability;
+			anaM2Armor._props.MaxDurability = anaM2Rig._props.MaxDurability;
+			anaM2Armor._props.armorZone = anaM2Rig._props.armorZone;
+			anaM2Armor._props.armorClass = anaM2Rig._props.armorClass;
+			
+			
+			if (anaM2Rig._props.speedPenaltyPercent != 0) {
+				anaM2Armor._props.speedPenaltyPercent = anaM2Rig._props.speedPenaltyPercent + 1;
+			} else {
+				anaM2Armor._props.speedPenaltyPercent = anaM2Rig._props.speedPenaltyPercent;
+			}
+			
+			if (anaM2Rig._props.mousePenalty != 0) {
+				anaM2Armor._props.mousePenalty = anaM2Rig._props.mousePenalty + 1;
+			} else {
+				anaM2Armor._props.mousePenalty = anaM2Rig._props.mousePenalty;
+			}
+			
+			if (anaM2Rig._props.weaponErgonomicPenalty != 0) {
+				anaM2Armor._props.weaponErgonomicPenalty = anaM2Rig._props.weaponErgonomicPenalty + 1;
+			} else {
+				anaM2Armor._props.weaponErgonomicPenalty = anaM2Rig._props.weaponErgonomicPenalty;
+			}
+			
+			anaM2Armor._props.BluntThroughput = anaM2Rig._props.BluntThroughput + 1;
+			anaM2Armor._props.ArmorMaterial = anaM2Rig._props.ArmorMaterial + 1;
+			
+			// change price
+			database.templates.prices["AddGearVanExt_ANA_M2_Armor"] = 85000;
+			
+			for (const handbookItemIndex in database.templates.handbook.Items) {
+				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_ANA_M2_Armor") {
 					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
 					break;
 				}
