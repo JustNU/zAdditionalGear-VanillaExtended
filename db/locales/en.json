@@ -1,0 +1,32 @@
+{
+	"AddGearVanExt_GEN4_Light": {
+        "Name": "IOTV Gen4 armor (light kit)",
+		"ShortName": "Gen4 Light",
+		"Description": "The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Light kit."
+    },
+	"AddGearVanExt_6B23_2_Digital_Flora": {
+        "Name": "6B23-2 body armor (Digital Flora)",
+		"ShortName": "6B23-2 DF",
+		"Description": "The Zabralo-8 main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
+    },
+	"AddGearVanExt_6B23_1_Mountain_Flora": {
+        "Name": "6B23-1 body armor (Mountain Flora)",
+		"ShortName": "6B23-1 MF",
+		"Description": "The \"Zabralo-8 main\" armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
+    },
+	"AddGearVanExt_6B43_Light": {
+        "Name": "6B43 6A Zabralo-Sh body armor (Light)",
+		"ShortName": "6B43 Light",
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+    },
+	"AddGearVanExt_6B43_Mobility": {
+        "Name": "6B43 6A Zabralo-Sh body armor (High Mobility Kit)",
+		"ShortName": "6B43 HMK",
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+    },
+	"AddGearVanExt_6B43_Assault": {
+        "Name": "6B43 6A Zabralo-Sh body armor (Assault)",
+		"ShortName": "6B43 Assault",
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+    }
+}

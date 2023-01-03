@@ -1,0 +1,37 @@
+{
+    "manifest": [
+		{
+            "key": "AddGearVanExt/ArmoredVests/gen4_light.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps",
+				"assets/content/characters/character/vest/materials/item_equipment_armor_iotv_texture.bundle"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/6B43_light.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/6B43_assault.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/6B43_mobility.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+	"AddGearVanExt_GEN4_Light": {
+		"BaseItemID": "5b44d0de86f774503d30cba8",
+		"BundlePath": "AddGearVanExt/ArmoredVests/gen4_light.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B23_1_Mountain_Flora": {
+		"BaseItemID": "5c0e5bab86f77461f55ed1f3",
+		"BundlePath": "assets/content/items/equipment/armor_6b23/item_equipment_armor_6b23_mflora.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B23_2_Digital_Flora": {
+		"BaseItemID": "5c0e57ba86f7747fa141986d",
+		"BundlePath": "assets/content/items/equipment/armor_6b23/item_equipment_armor_6b23_digital.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B43_Light": {
+		"BaseItemID": "545cdb794bdc2d3a198b456a",
+		"BundlePath": "AddGearVanExt/ArmoredVests/6B43_light.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B43_Mobility": {
+		"BaseItemID": "545cdb794bdc2d3a198b456a",
+		"BundlePath": "AddGearVanExt/ArmoredVests/6B43_mobility.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B43_Assault": {
+		"BaseItemID": "545cdb794bdc2d3a198b456a",
+		"BundlePath": "AddGearVanExt/ArmoredVests/6B43_assault.bundle",
+		"LootWeigthMult": 1
+	}
+}
