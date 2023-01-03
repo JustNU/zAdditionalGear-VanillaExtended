@@ -15,18 +15,18 @@
 		"Description": "The \"Zabralo-8 main\" armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
     },
 	"AddGearVanExt_6B43_Light": {
-        "Name": "6B43 6A Zabralo-Sh body armor (Light)",
+        "Name": "6B43 6A Zabralo-Sh body armor (light kit)",
 		"ShortName": "6B43 Light",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no accessories."
     },
 	"AddGearVanExt_6B43_Mobility": {
-        "Name": "6B43 6A Zabralo-Sh body armor (High Mobility Kit)",
+        "Name": "6B43 6A Zabralo-Sh body armor (high mobility kit)",
 		"ShortName": "6B43 HMK",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Increased mobility and comfort kit."
     },
 	"AddGearVanExt_6B43_Assault": {
-        "Name": "6B43 6A Zabralo-Sh body armor (Assault)",
+        "Name": "6B43 6A Zabralo-Sh body armor (assault kit)",
 		"ShortName": "6B43 Assault",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Increased ergonomics assault kit."
     }
 }
