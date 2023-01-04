@@ -33,5 +33,10 @@
 		"BaseItemID": "545cdb794bdc2d3a198b456a",
 		"BundlePath": "AddGearVanExt/ArmoredVests/ana_m2_armor.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Defender2_Light": {
+		"BaseItemID": "5e9dacf986f774054d6b89f4",
+		"BundlePath": "AddGearVanExt/ArmoredVests/defender2_light.bundle",
+		"LootWeigthMult": 1
 	}
 }

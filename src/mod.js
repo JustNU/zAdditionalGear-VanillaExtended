@@ -16,7 +16,7 @@ class Mod
 		const itemData = require("../db/items/itemData.json");
 		
 		// edge cases
-		const edgeCases = ["AddGearVanExt_GEN4_Light", "AddGearVanExt_6B43_Light", "AddGearVanExt_6B43_Assault", "AddGearVanExt_6B43_Mobility", "AddGearVanExt_ANA_M2_Armor"];
+		const edgeCases = ["AddGearVanExt_GEN4_Light", "AddGearVanExt_6B43_Light", "AddGearVanExt_6B43_Assault", "AddGearVanExt_6B43_Mobility", "AddGearVanExt_ANA_M2_Armor", "AddGearVanExt_Defender2_Light"];
 		
 		//add retextures
 		for (const categoryId in itemConfig) {
@@ -39,7 +39,8 @@ class Mod
 				["AddGearVanExt_6B43_Light"],
 				["AddGearVanExt_6B43_Assault"],
 				["AddGearVanExt_6B43_Mobility"],
-				["AddGearVanExt_ANA_M2_Armor"]
+				["AddGearVanExt_ANA_M2_Armor"],
+				["AddGearVanExt_Defender2_Light"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
@@ -72,7 +73,7 @@ class Mod
 			const gen4Light = database.templates.items["AddGearVanExt_GEN4_Light"];
 			
 			if (gen4Light._props.Weight > 0)
-				gen4Light._props.Weight = 10;
+				gen4Light._props.Weight = gen4Light._props.Weight - 1;
 			if (gen4Light._props.Width != 1 && gen4Light._props.Height != 1) {
 				gen4Light._props.Height = 3;
 				gen4Light._props.Width = 3;
@@ -111,7 +112,7 @@ class Mod
 			const sixB43Light = database.templates.items["AddGearVanExt_6B43_Light"];
 			
 			if (sixB43Light._props.Weight > 0)
-				sixB43Light._props.Weight = 14;
+				sixB43Light._props.Weight = sixB43Light._props.Weight - 4;
 			if (sixB43Light._props.Width != 1 && sixB43Light._props.Height != 1) {
 				sixB43Light._props.Width = 3;
 				sixB43Light._props.Height = 3;
@@ -150,7 +151,7 @@ class Mod
 			// change stats
 			const sixB43Assault = database.templates.items["AddGearVanExt_6B43_Assault"];
 			if (sixB43Assault._props.Weight > 0)
-				sixB43Assault._props.Weight = 18;
+				sixB43Assault._props.Weight = sixB43Assault._props.Weight - 2;
 			if (sixB43Assault._props.Width != 1 && sixB43Assault._props.Height != 1) {
 				sixB43Assault._props.Width = 4;
 				sixB43Assault._props.Height = 3;
@@ -185,7 +186,7 @@ class Mod
 			// change stats
 			const sixB43Mobility = database.templates.items["AddGearVanExt_6B43_Mobility"];
 			if (sixB43Mobility._props.Weight > 0)
-				sixB43Mobility._props.Weight = 16;
+				sixB43Mobility._props.Weight = sixB43Mobility._props.Weight - 3;
 			if (sixB43Mobility._props.Width != 1 && sixB43Mobility._props.Height != 1) {
 				sixB43Mobility._props.Width = 3;
 				sixB43Mobility._props.Height = 4;
@@ -213,7 +214,7 @@ class Mod
 			}
 		}
 		
-		// 6b43 mobility
+		// ana2 plate
 		if (itemConfig["Armored Vests"]["AddGearVanExt_ANA_M2_Armor"]) {
 			core.addItemRetexture(modDb, "AddGearVanExt_ANA_M2_Armor", itemData["AddGearVanExt_ANA_M2_Armor"].BaseItemID, itemData["AddGearVanExt_ANA_M2_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_ANA_M2_Armor"].LootWeigthMult);
 			const anaM2Armor = database.templates.items["AddGearVanExt_ANA_M2_Armor"];
@@ -226,8 +227,14 @@ class Mod
 				anaM2Armor._props.Weight = anaM2Rig._props.Weight;
 			}
 			
-			anaM2Armor._props.Width = anaM2Rig._props.Width;
-			anaM2Armor._props.Height = anaM2Rig._props.Height;
+			if (anaM2Rig._props.Width != 1 && anaM2Rig._props.Height != 1) {
+				anaM2Armor._props.Width = 3;
+				anaM2Armor._props.Height = 3;
+			} else {
+				anaM2Armor._props.Width = anaM2Rig._props.Width;
+				anaM2Armor._props.Height = anaM2Rig._props.Height;
+			}
+			
 			anaM2Armor._props.RepairCost = anaM2Rig._props.RepairCost;
 			anaM2Armor._props.CanSellOnRagfair = anaM2Rig._props.CanSellOnRagfair;
 			anaM2Armor._props.Durability = anaM2Rig._props.Durability;
@@ -262,6 +269,40 @@ class Mod
 			
 			for (const handbookItemIndex in database.templates.handbook.Items) {
 				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_ANA_M2_Armor") {
+					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
+					break;
+				}
+			}
+		}
+		
+		if (itemConfig["Armored Vests"]["AddGearVanExt_Defender2_Light"]) {
+			core.addItemRetexture(modDb, "AddGearVanExt_Defender2_Light", itemData["AddGearVanExt_Defender2_Light"].BaseItemID, itemData["AddGearVanExt_Defender2_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Defender2_Light"].LootWeigthMult);
+			const defender2 = database.templates.items["AddGearVanExt_Defender2_Light"];
+			
+			// change stats
+			if (defender2._props.Weight > 0)
+				defender2._props.Weight = defender2._props.Weight - 2;
+			if (defender2._props.Width != 1 && defender2._props.Height != 1) {
+				defender2._props.Width = 3;
+				defender2._props.Height = 3;
+			}
+			
+			
+			defender2._props.Durability = Math.round(defender2._props.MaxDurability - (defender2._props.MaxDurability * 0.14));
+			defender2._props.MaxDurability = Math.round(defender2._props.MaxDurability - (defender2._props.MaxDurability * 0.14));
+			
+			if (defender2._props.speedPenaltyPercent != 0)
+				defender2._props.speedPenaltyPercent = defender2._props.speedPenaltyPercent + 2;
+			if (defender2._props.mousePenalty != 0)
+				defender2._props.mousePenalty = defender2._props.mousePenalty + 2;
+			if (defender2._props.weaponErgonomicPenalty != 0)
+				defender2._props.weaponErgonomicPenalty = defender2._props.weaponErgonomicPenalty + 2;
+			
+			// change price
+			database.templates.prices["AddGearVanExt_Defender2_Light"] = 85000;
+			
+			for (const handbookItemIndex in database.templates.handbook.Items) {
+				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_Defender2_Light") {
 					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
 					break;
 				}

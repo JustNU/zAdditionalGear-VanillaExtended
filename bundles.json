@@ -40,6 +40,14 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/defender2_light.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }

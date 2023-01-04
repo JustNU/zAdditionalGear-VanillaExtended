@@ -6,6 +6,7 @@
 		"AddGearVanExt_6B43_Light": true,
 		"AddGearVanExt_6B43_Mobility": true,
 		"AddGearVanExt_6B43_Assault": true,
-		"AddGearVanExt_ANA_M2_Armor": true
+		"AddGearVanExt_ANA_M2_Armor": true,
+		"AddGearVanExt_Defender2_Light": true
 	}
 }
