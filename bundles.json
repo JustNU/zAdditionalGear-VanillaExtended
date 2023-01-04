@@ -50,13 +50,8 @@
 			]
         },
 		{
-            "key": "AddGearVanExt/ArmoredVests/bagarii_osprey_rbav_meshes.bundle",
-            "dependencyKeys": []
-        },
-		{
             "key": "AddGearVanExt/ArmoredVests/bagarii_armor.bundle",
             "dependencyKeys": [
-				"AddGearVanExt/ArmoredVests/bagarii_osprey_rbav_meshes.bundle",
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
 				"cubemaps"
@@ -65,7 +60,6 @@
 		{
             "key": "AddGearVanExt/ArmoredVests/osprey_armor.bundle",
             "dependencyKeys": [
-				"AddGearVanExt/ArmoredVests/bagarii_osprey_rbav_meshes.bundle",
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
 				"cubemaps"
@@ -74,7 +68,6 @@
 		{
             "key": "AddGearVanExt/ArmoredVests/osprey_armor_assault.bundle",
             "dependencyKeys": [
-				"AddGearVanExt/ArmoredVests/bagarii_osprey_rbav_meshes.bundle",
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
 				"cubemaps"
@@ -83,7 +76,6 @@
 		{
             "key": "AddGearVanExt/ArmoredVests/rbav_armor.bundle",
             "dependencyKeys": [
-				"AddGearVanExt/ArmoredVests/bagarii_osprey_rbav_meshes.bundle",
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
 				"cubemaps"
