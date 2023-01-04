@@ -7,6 +7,13 @@
 		"AddGearVanExt_6B43_Mobility": true,
 		"AddGearVanExt_6B43_Assault": true,
 		"AddGearVanExt_ANA_M2_Armor": true,
-		"AddGearVanExt_Defender2_Light": true
+		"AddGearVanExt_Defender2_Light": true,
+		"AddGearVanExt_Bagariy_Armor": true,
+		"AddGearVanExt_Osprey_Armor": true,
+		"AddGearVanExt_Osprey_Assault_Armor": true,
+		"AddGearVanExt_RBAV_Armor": true
+	},
+	"Rigs": {
+		"AddGearVanExt_Bagariy_No_Bear": true
 	}
 }
