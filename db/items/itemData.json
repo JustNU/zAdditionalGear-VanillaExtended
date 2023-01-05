@@ -63,5 +63,10 @@
 		"BaseItemID": "628d0618d1ba6e4fa07ce5a4",
 		"BundlePath": "AddGearVanExt/Rigs/bagarii_no_bear.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Bagariy_Armor_No_Bear": {
+		"BaseItemID": "5f5f41476bdad616ad46d631",
+		"BundlePath": "AddGearVanExt/ArmoredVests/bagarii_armor_no_bear.bundle",
+		"LootWeigthMult": 1
 	}
 }

@@ -50,7 +50,7 @@
 			]
         },
 		{
-            "key": "AddGearVanExt/ArmoredVests/bagarii_armor.bundle",
+            "key": "AddGearVanExt/ArmoredVests/bagarii_armor_no_bear.bundle",
             "dependencyKeys": [
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
@@ -89,6 +89,19 @@
             "key": "AddGearVanExt/Rigs/bagarii_no_bear.bundle",
             "dependencyKeys": [
 				"AddGearVanExt/Rigs/bagarii_no_bear_mesh.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/bagarii_armor_mesh.bundle",
+            "dependencyKeys": []
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/bagarii_armor.bundle",
+            "dependencyKeys": [
+				"AddGearVanExt/ArmoredVests/bagarii_armor_mesh.bundle",
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
 				"cubemaps"
