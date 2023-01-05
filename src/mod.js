@@ -22,12 +22,7 @@ class Mod
 			"AddGearVanExt_6B43_Assault",
 			"AddGearVanExt_6B43_Mobility",
 			"AddGearVanExt_ANA_M2_Armor",
-			"AddGearVanExt_Defender2_Light",
-			"AddGearVanExt_Bagariy_Armor",
-			"AddGearVanExt_Bagariy_Armor_No_Bear",
-			"AddGearVanExt_Osprey_Armor",
-			"AddGearVanExt_Osprey_Assault_Armor",
-			"AddGearVanExt_RBAV_Armor"
+			"AddGearVanExt_Defender2_Light"
 		];
 		
 		//add retextures
