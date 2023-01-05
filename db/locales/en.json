@@ -39,11 +39,6 @@
 		"ShortName": "Def2 Light",
 		"Description": "The FORT OK \"Defender-2\" operational kit is a modification of the popular body armor FORT \"Defender\" designed for both VIP and for employees of operational combat units. The kit uses the maximum capabilities of the modular principle of building armor based on steel plates."
     },
-	"AddGearVanExt_Bagariy_Armor": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
-    },
 	"AddGearVanExt_Osprey_Armor": {
         "Name": "temp",
 		"ShortName": "temp",

@@ -93,19 +93,6 @@
 				"shaders",
 				"cubemaps"
 			]
-        },
-		{
-            "key": "AddGearVanExt/ArmoredVests/bagarii_armor_mesh.bundle",
-            "dependencyKeys": []
-        },
-		{
-            "key": "AddGearVanExt/ArmoredVests/bagarii_armor.bundle",
-            "dependencyKeys": [
-				"AddGearVanExt/ArmoredVests/bagarii_armor_mesh.bundle",
-				"assets/commonassets/physics/physicsmaterials.bundle",
-				"shaders",
-				"cubemaps"
-			]
         }
     ]
 }
