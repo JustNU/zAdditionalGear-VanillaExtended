@@ -1,6 +1,6 @@
 {
 	"AddGearVanExt_GEN4_Light": {
-        "Name": "IOTV Gen4 armor (light kit)",
+        "Name": "IOTV Gen4 armor (light kit, Multicam)",
 		"ShortName": "Gen4 Light",
 		"Description": "The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Light kit."
     },
@@ -17,7 +17,7 @@
 	"AddGearVanExt_6B43_Light": {
         "Name": "6B43 6A Zabralo-Sh body armor (light kit)",
 		"ShortName": "6B43 Light",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no accessories."
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no additional protection."
     },
 	"AddGearVanExt_6B43_Mobility": {
         "Name": "6B43 6A Zabralo-Sh body armor (high mobility kit)",
@@ -36,7 +36,7 @@
     },
 	"AddGearVanExt_Defender2_Light": {
         "Name": "FORT Defender-2 body armor (Light)",
-		"ShortName": "Def2 Light",
+		"ShortName": "Defender-2 Light",
 		"Description": "The FORT OK \"Defender-2\" operational kit is a modification of the popular body armor FORT \"Defender\" designed for both VIP and for employees of operational combat units. The kit uses the maximum capabilities of the modular principle of building armor based on steel plates."
     },
 	"AddGearVanExt_Bagariy_Armor": {
@@ -45,23 +45,23 @@
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_Osprey_Armor": {
-        "Name": "CQC Osprey MK4A plate carrier",
+        "Name": "CQC Osprey MK4A plate carrier (MTP)",
 		"ShortName": "Osprey MK4A",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. Base kit."
     },
 	"AddGearVanExt_Osprey_Assault_Armor": {
-        "Name": "CQC Osprey MK4A plate carrier (Assault)",
+        "Name": "CQC Osprey MK4A plate carrier (Assault, MTP)",
 		"ShortName": "Osprey MK4A (A)",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with heavy armor plates."
     },
 	"AddGearVanExt_RBAV_Armor": {
         "Name": "ECLiPSE RBAV-AF plate carrier (Ranger Green)",
-		"ShortName": "RBAV-AF",
+		"ShortName": "RBAV-AF Plate",
 		"Description": "This new BAE ECLiPSE RBAV (Releasable Body Armor Vest, Air Force) variant is designed specifically for the Guardian Angel Weapon System (USAF PJ) and contains several new features not found in other versions."
     },
 	"AddGearVanExt_Bagariy_No_Bear": {
         "Name": "NPP KlASS Bagariy armored rig",
-		"ShortName": "Bagariy",
+		"ShortName": "Bagariy Rig",
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces. Actively was used by PMC BEAR as the main heavy body armor."
     },
 	"AddGearVanExt_Bagariy_Armor_No_Bear": {

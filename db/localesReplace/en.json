@@ -1,0 +1,32 @@
+{
+	"628d0618d1ba6e4fa07ce5a4": {
+        "ShortName": "Bagariy Rig BEAR"
+	},
+	"5b44cd8b86f774503d30cba2": {
+        "Name": "IOTV Gen4 body armor (full protection, Multicam)"
+	},
+	"5b44cf1486f77431723e3d05": {
+        "Name": "IOTV Gen4 body armor (assault kit, Multicam)"
+	},
+	"5b44d0de86f774503d30cba8": {
+        "Name": "IOTV Gen4 body armor (high mobility kit, Multicam)"
+	},
+	"545cdb794bdc2d3a198b456a": {
+        "Name": "6B43 6A Zabralo-Sh body armor (full protection)",
+		"ShortName": "6B43 Full",
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Full protection kit."
+    },
+	"5ab8dced86f774646209ec87": {
+        "ShortName": "ANA M2 Rig"
+	},
+	"60a3c68c37ea821725773ef5": {
+        "Name": "CQC Osprey MK4A rig (Protection, MTP)"
+    },
+	"60a3c70cde5f453f634816a3": {
+        "Name": "CQC Osprey MK4A rig (Assault, MTP)"
+    },
+	"628dc750b910320f4c27a732": {
+        "Name": "ECLiPSE RBAV-AF rig (Ranger Green)",
+		"ShortName": "RBAV-AF Rig"
+    }
+}
