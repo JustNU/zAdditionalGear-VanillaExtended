@@ -16,7 +16,19 @@ class Mod
 		const itemData = require("../db/items/itemData.json");
 		
 		// edge cases
-		const edgeCases = ["AddGearVanExt_GEN4_Light", "AddGearVanExt_6B43_Light", "AddGearVanExt_6B43_Assault", "AddGearVanExt_6B43_Mobility", "AddGearVanExt_ANA_M2_Armor", "AddGearVanExt_Defender2_Light"];
+		const edgeCases = [
+			"AddGearVanExt_GEN4_Light",
+			"AddGearVanExt_6B43_Light",
+			"AddGearVanExt_6B43_Assault",
+			"AddGearVanExt_6B43_Mobility",
+			"AddGearVanExt_ANA_M2_Armor",
+			"AddGearVanExt_Defender2_Light",
+			"AddGearVanExt_Bagariy_Armor",
+			"AddGearVanExt_Bagariy_Armor_No_Bear",
+			"AddGearVanExt_Osprey_Armor",
+			"AddGearVanExt_Osprey_Assault_Armor",
+			"AddGearVanExt_RBAV_Armor"
+		];
 		
 		//add retextures
 		for (const categoryId in itemConfig) {
@@ -40,7 +52,12 @@ class Mod
 				["AddGearVanExt_6B43_Assault"],
 				["AddGearVanExt_6B43_Mobility"],
 				["AddGearVanExt_ANA_M2_Armor"],
-				["AddGearVanExt_Defender2_Light"]
+				["AddGearVanExt_Defender2_Light"],
+				["AddGearVanExt_Bagariy_Armor"],
+				["AddGearVanExt_Bagariy_Armor_No_Bear"],
+				["AddGearVanExt_Osprey_Armor"],
+				["AddGearVanExt_Osprey_Assault_Armor"],
+				["AddGearVanExt_RBAV_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
