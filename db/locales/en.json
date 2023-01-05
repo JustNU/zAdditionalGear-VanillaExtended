@@ -40,33 +40,33 @@
 		"Description": "The FORT OK \"Defender-2\" operational kit is a modification of the popular body armor FORT \"Defender\" designed for both VIP and for employees of operational combat units. The kit uses the maximum capabilities of the modular principle of building armor based on steel plates."
     },
 	"AddGearVanExt_Bagariy_Armor": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "NPP KlASS Bagariy body armor (BEAR)",
+		"ShortName": "Bagariy BEAR",
+		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_Osprey_Armor": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "CQC Osprey MK4A plate carrier",
+		"ShortName": "Osprey MK4A",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. Base kit."
     },
 	"AddGearVanExt_Osprey_Assault_Armor": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "CQC Osprey MK4A plate carrier (Assault)",
+		"ShortName": "Osprey MK4A (A)",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with heavy armor plates."
     },
 	"AddGearVanExt_RBAV_Armor": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "ECLiPSE RBAV-AF plate carrier (Ranger Green)",
+		"ShortName": "RBAV-AF",
+		"Description": "This new BAE ECLiPSE RBAV (Releasable Body Armor Vest, Air Force) variant is designed specifically for the Guardian Angel Weapon System (USAF PJ) and contains several new features not found in other versions."
     },
 	"AddGearVanExt_Bagariy_No_Bear": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "NPP KlASS Bagariy armored rig",
+		"ShortName": "Bagariy",
+		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces. Actively was used by PMC BEAR as the main heavy body armor."
     },
 	"AddGearVanExt_Bagariy_Armor_No_Bear": {
-        "Name": "temp",
-		"ShortName": "temp",
-		"Description": "temp"
+        "Name": "NPP KlASS Bagariy body armor",
+		"ShortName": "Bagariy",
+		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     }
 }
