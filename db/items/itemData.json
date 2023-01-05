@@ -39,6 +39,11 @@
 		"BundlePath": "AddGearVanExt/ArmoredVests/defender2_light.bundle",
 		"LootWeigthMult": 1
 	},
+	"AddGearVanExt_Bagariy_Armor": {
+		"BaseItemID": "5f5f41476bdad616ad46d631",
+		"BundlePath": "AddGearVanExt/ArmoredVests/bagarii_armor.bundle",
+		"LootWeigthMult": 1
+	},
 	"AddGearVanExt_Osprey_Armor": {
 		"BaseItemID": "609e8540d5c319764c2bc2e9",
 		"BundlePath": "AddGearVanExt/ArmoredVests/osprey_armor.bundle",
