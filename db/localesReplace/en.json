@@ -1,5 +1,6 @@
 {
 	"628d0618d1ba6e4fa07ce5a4": {
+		"Name": "NPP KlASS Bagariy armored rig (BEAR)",
         "ShortName": "Bagariy Rig BEAR"
 	},
 	"5b44cd8b86f774503d30cba2": {
@@ -20,13 +21,18 @@
         "ShortName": "ANA M2 Rig"
 	},
 	"60a3c68c37ea821725773ef5": {
-        "Name": "CQC Osprey MK4A rig (Protection, MTP)"
+        "Name": "CQC Osprey MK4A armored rig (Protection, MTP)",
+		"ShortName": "Osprey MK4A Rig (P)"
     },
 	"60a3c70cde5f453f634816a3": {
-        "Name": "CQC Osprey MK4A rig (Assault, MTP)"
+        "Name": "CQC Osprey MK4A armored rig (Assault, MTP)",
+		"ShortName": "Osprey MK4A Rig (A)"
     },
 	"628dc750b910320f4c27a732": {
-        "Name": "ECLiPSE RBAV-AF rig (Ranger Green)",
+        "Name": "ECLiPSE RBAV-AF armored rig (Ranger Green)",
 		"ShortName": "RBAV-AF Rig"
+    },
+	"5c0e57ba86f7747fa141986d": {
+		"Description": "The \"Zabralo-8\" main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
     }
 }
