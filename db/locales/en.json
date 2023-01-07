@@ -35,7 +35,7 @@
 		"Description": "A tactical rig with additional class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Plate carrier variant. Manufactured by ANA Tactical."
     },
 	"AddGearVanExt_Defender2_Light": {
-        "Name": "FORT Defender-2 body armor (Light)",
+        "Name": "FORT Defender-2 body armor (Light, Olive Drab)",
 		"ShortName": "Defender-2 Light",
 		"Description": "The FORT OK \"Defender-2\" operational kit is a modification of the popular body armor FORT \"Defender\" designed for both VIP and for employees of operational combat units. The kit uses the maximum capabilities of the modular principle of building armor based on steel plates."
     },
@@ -78,5 +78,15 @@
         "Name": "6B5-16 Zh-86 Uley armored rig (Flora)",
 		"ShortName": "6B5-16",
 		"Description": "The 6B5 bulletproof vest was adopted by the armed forces of the USSR in 1986. Option 6B5-16 is designed to protect against fragments and bullets of fire arms (class 3 protection, titanium). Also has several pouches for magazines and other equipment."
+    },
+	"AddGearVanExt_Redut_Light_Olive": {
+        "Name": "FORT Redut-M body armor (Light, Olive Green)",
+		"ShortName": "Redut Light",
+		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Base kit with no additional protection."
+    },
+	"AddGearVanExt_Redut_Light_Woodland": {
+        "Name": "FORT Redut-M body armor (Light, Woodland)",
+		"ShortName": "Redut Light",
+		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Base kit with no additional protection."
     }
 }

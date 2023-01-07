@@ -29,7 +29,9 @@ class Mod
 			"AddGearVanExt_Bagariy_Armor_No_Bear",
 			"AddGearVanExt_Osprey_Armor",
 			"AddGearVanExt_Osprey_Assault_Armor",
-			"AddGearVanExt_RBAV_Armor"
+			"AddGearVanExt_RBAV_Armor",
+			"AddGearVanExt_Redut_Light_Olive",
+			"AddGearVanExt_Redut_Light_Woodland"
 		];
 		
 		// add retextures
@@ -40,23 +42,26 @@ class Mod
 				for (const localeID in database.locales.global) {
 					
 					// en placeholder
-					if (enLocale[itemId].Name)
-						database.locales.global[localeID][`${itemId} Name`] = enLocale[itemId].Name;
-					if (enLocale[itemId].ShortName)
-						database.locales.global[localeID][`${itemId} ShortName`] = enLocale[itemId].ShortName;
-					if (enLocale[itemId].Description)
-						database.locales.global[localeID][`${itemId} Description`] = enLocale[itemId].Description;
-					
+					if (enLocale[itemId]) {
+						if (enLocale[itemId].Name)
+							database.locales.global[localeID][`${itemId} Name`] = enLocale[itemId].Name;
+						if (enLocale[itemId].ShortName)
+							database.locales.global[localeID][`${itemId} ShortName`] = enLocale[itemId].ShortName;
+						if (enLocale[itemId].Description)
+							database.locales.global[localeID][`${itemId} Description`] = enLocale[itemId].Description;
+					}
 					// actual locale
 					if (VFS.exists(`${modDb}/locales/${localeID}.json`) && localeID != "en") {
 						const actualLocale = jsonUtil.deserialize(VFS.readFile(`${modDb}/locales/${localeID}.json`));
 
-						if (actualLocale[itemId].Name)
-							database.locales.global[localeID][`${itemId} Name`] = actualLocale[itemId].Name;
-						if (actualLocale[itemId].ShortName)
-							database.locales.global[localeID][`${itemId} ShortName`] = actualLocale[itemId].ShortName;
-						if (actualLocale[itemId].Description)
-							database.locales.global[localeID][`${itemId} Description`] = actualLocale[itemId].Description;
+						if (actualLocale[itemId]) {
+							if (actualLocale[itemId].Name)
+								database.locales.global[localeID][`${itemId} Name`] = actualLocale[itemId].Name;
+							if (actualLocale[itemId].ShortName)
+								database.locales.global[localeID][`${itemId} ShortName`] = actualLocale[itemId].ShortName;
+							if (actualLocale[itemId].Description)
+								database.locales.global[localeID][`${itemId} Description`] = actualLocale[itemId].Description;
+						}
 					}
 					
 					// replace some default locale
@@ -100,7 +105,9 @@ class Mod
 				["AddGearVanExt_Osprey_Assault_Armor"],
 				["AddGearVanExt_RBAV_Armor"],
 				["AddGearVanExt_6B5_15_Khaki"],
-				["AddGearVanExt_6B5_16_Flora"]
+				["AddGearVanExt_6B5_16_Flora"],
+				["AddGearVanExt_Redut_Light_Olive"],
+				["AddGearVanExt_Redut_Light_Woodland"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous

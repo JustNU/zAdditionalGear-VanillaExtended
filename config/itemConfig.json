@@ -12,7 +12,9 @@
 		"AddGearVanExt_Bagariy_Armor_No_Bear": true,
 		"AddGearVanExt_Osprey_Armor": true,
 		"AddGearVanExt_Osprey_Assault_Armor": true,
-		"AddGearVanExt_RBAV_Armor": true
+		"AddGearVanExt_RBAV_Armor": true,
+		"AddGearVanExt_Redut_Light_Olive": true,
+		"AddGearVanExt_Redut_Light_Woodland": true
 	},
 	"Rigs": {
 		"AddGearVanExt_Bagariy_No_Bear": true,
