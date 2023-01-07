@@ -50,9 +50,9 @@
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. Base kit."
     },
 	"AddGearVanExt_Osprey_Assault_Armor": {
-        "Name": "CQC Osprey MK4A plate carrier (Assault, MTP)",
-		"ShortName": "Osprey MK4A Plate (A)",
-		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with heavy armor plates."
+        "Name": "CQC Osprey MK4A plate carrier (Protection, MTP)",
+		"ShortName": "Osprey MK4A Plate (P)",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Protection preset is provided with additional protection and heavier armor plate."
     },
 	"AddGearVanExt_RBAV_Armor": {
         "Name": "ECLiPSE RBAV-AF plate carrier (Ranger Green)",
