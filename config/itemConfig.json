@@ -15,6 +15,8 @@
 		"AddGearVanExt_RBAV_Armor": true
 	},
 	"Rigs": {
-		"AddGearVanExt_Bagariy_No_Bear": true
+		"AddGearVanExt_Bagariy_No_Bear": true,
+		"AddGearVanExt_6B5_15_Khaki": true,
+		"AddGearVanExt_6B5_16_Flora": true
 	}
 }

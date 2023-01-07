@@ -98,7 +98,9 @@ class Mod
 				["AddGearVanExt_Bagariy_No_Bear"],
 				["AddGearVanExt_Osprey_Armor"],
 				["AddGearVanExt_Osprey_Assault_Armor"],
-				["AddGearVanExt_RBAV_Armor"]
+				["AddGearVanExt_RBAV_Armor"],
+				["AddGearVanExt_6B5_15_Khaki"],
+				["AddGearVanExt_6B5_16_Flora"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous

@@ -68,5 +68,15 @@
 		"BaseItemID": "5f5f41476bdad616ad46d631",
 		"BundlePath": "AddGearVanExt/ArmoredVests/bagarii_armor_no_bear.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B5_15_Khaki": {
+		"BaseItemID": "5c0e446786f7742013381639",
+		"BundlePath": "assets/content/items/equipment/armor_6b5/item_equipment_rig_6b5_khaki.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_6B5_16_Flora": {
+		"BaseItemID": "5c0e3eb886f7742015526062",
+		"BundlePath": "assets/content/items/equipment/armor_6b5/item_equipment_rig_6b5_flora.bundle",
+		"LootWeigthMult": 1
 	}
 }
