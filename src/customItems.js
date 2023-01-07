@@ -1,7 +1,7 @@
 ﻿"use strict";
 
-class EdgeCases {
-	static handleEdgeCases(database, core, config, itemConfig, itemData)
+class CustomItems {
+	static handleCustomItems(database, core, config, itemConfig, itemData)
 	{
 		// GEN4 light
 		if (itemConfig["Armored Vests"]["AddGearVanExt_GEN4_Light"]) {
@@ -39,7 +39,7 @@ class EdgeCases {
 			
 			// add trade offer
 			if (config.EnableTradeOffers)
-				core.createTraderOffer("AddGearVanExt_GEN4_Light", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 3);
+				core.createTraderOffer("AddGearVanExt_GEN4_Light", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 4);
 			
 		}
 		
@@ -515,4 +515,4 @@ class EdgeCases {
 	}
 }
 
-module.exports = EdgeCases;
+module.exports = CustomItems;

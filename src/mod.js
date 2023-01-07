@@ -1,5 +1,5 @@
 ﻿"use strict";
-const edgeCasesFunctions = require("./edgeCases.js");
+const customItemsFunctions = require("./customItems.js");
 
 class Mod
 {
@@ -18,7 +18,7 @@ class Mod
 		const enLocale = jsonUtil.deserialize(VFS.readFile(`${modDb}/locales/en.json`));
 		
 		// edge cases
-		const edgeCases = [
+		const customItems = [
 			"AddGearVanExt_GEN4_Light",
 			"AddGearVanExt_6B43_Light",
 			"AddGearVanExt_6B43_Assault",
@@ -72,8 +72,8 @@ class Mod
 					
 				}
 				
-				// skip edge cases, handle them later
-				if (edgeCases.includes(itemId)) {
+				// skip custom itens, handle them later
+				if (customItems.includes(itemId)) {
 					continue;
 				}
 				
@@ -95,6 +95,7 @@ class Mod
 				["AddGearVanExt_Defender2_Light"],
 				["AddGearVanExt_Bagariy_Armor"],
 				["AddGearVanExt_Bagariy_Armor_No_Bear"],
+				["AddGearVanExt_Bagariy_No_Bear"],
 				["AddGearVanExt_Osprey_Armor"],
 				["AddGearVanExt_Osprey_Assault_Armor"],
 				["AddGearVanExt_RBAV_Armor"]
@@ -121,8 +122,8 @@ class Mod
 			}
 		}
 		
-		// deal with edge cases
-		edgeCasesFunctions.handleEdgeCases(database, core, config, itemConfig, itemData);
+		// deal with custom items
+		customItemsFunctions.handleCustomItems(database, core, config, itemConfig, itemData);
 	}
 }
 
