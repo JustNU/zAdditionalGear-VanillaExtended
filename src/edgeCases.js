@@ -186,6 +186,8 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.25)); // -6
@@ -273,6 +275,8 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.24)); // -16
@@ -326,6 +330,8 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.24)); // -16
@@ -376,9 +382,11 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change durability
-			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)) // 50
+			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
 			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
 			
 			// change debuffs
@@ -433,8 +441,10 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
-			dbItem._props.Durability = rigItem._props.Durability
-			dbItem._props.MaxDurability = rigItem._props.MaxDurability
+			dbItem._props.Durability = rigItem._props.Durability;
+			dbItem._props.MaxDurability = rigItem._props.MaxDurability;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.06)); // -15
@@ -456,35 +466,51 @@ class EdgeCases {
 		if (itemConfig["Armored Vests"]["AddGearVanExt_RBAV_Armor"]) {
 			core.addItemRetexture("AddGearVanExt_RBAV_Armor", itemData["AddGearVanExt_RBAV_Armor"].BaseItemID, itemData["AddGearVanExt_RBAV_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_RBAV_Armor"].LootWeigthMult);
 			const dbItem = database.templates.items["AddGearVanExt_RBAV_Armor"];
+			const rigItem = database.templates.items["628dc750b910320f4c27a732"];
 			
-			// change stats
-			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 2;
-			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
+			// change weight
+			if (rigItem._props.Weight > 0) {
+				dbItem._props.Weight = rigItem._props.Weight - 1; // 6.5
+			} else {
+				dbItem._props.Weight = rigItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (rigItem._props.Width != 1 && rigItem._props.Height != 1) {
 				dbItem._props.Width = 3;
 				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = rigItem._props.Width;
+				dbItem._props.Height = rigItem._props.Height;
 			}
 			
+			// same stats as rig
+			dbItem._props.RepairCost = rigItem._props.RepairCost;
+			dbItem._props.CanSellOnRagfair = rigItem._props.CanSellOnRagfair;
+			dbItem._props.armorClass = rigItem._props.armorClass;
+			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
+			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
+			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Durability = rigItem._props.Durability;
+			dbItem._props.MaxDurability = rigItem._props.MaxDurability;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
-			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.14));
-			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.14));
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.12)); // -7
+			dbItem._props.mousePenalty = Math.round(rigItem._props.mousePenalty - (rigItem._props.mousePenalty * 0.33)); // -4
+			dbItem._props.weaponErgonomicPenalty = rigItem._props.weaponErgonomicPenalty;
 			
-			if (dbItem._props.speedPenaltyPercent != 0)
-				dbItem._props.speedPenaltyPercent = dbItem._props.speedPenaltyPercent + 2;
-			if (dbItem._props.mousePenalty != 0)
-				dbItem._props.mousePenalty = dbItem._props.mousePenalty + 2;
-			if (dbItem._props.weaponErgonomicPenalty != 0)
-				dbItem._props.weaponErgonomicPenalty = dbItem._props.weaponErgonomicPenalty + 2;
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_RBAV_Armor"});
+			const rigHandbookEntry = database.templates.handbook.Items.find((item) => {return item.Id === "628dc750b910320f4c27a732"});
 			
-			// change price
-			database.templates.prices["AddGearVanExt_RBAV_Armor"] = 85000;
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.10)); // 76500
 			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_RBAV_Armor") {
-					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
-					break;
-				}
-			}
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_RBAV_Armor"])
+				database.templates.prices["AddGearVanExt_RBAV_Armor"] = dbItemHandbook.Price;
 		}
 	}
 }
