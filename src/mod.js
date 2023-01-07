@@ -17,7 +17,7 @@ class Mod
 		const itemData = require("../db/items/itemData.json");
 		const enLocale = jsonUtil.deserialize(VFS.readFile(`${modDb}/locales/en.json`));
 		
-		// edge cases
+		// custom items
 		const customItems = [
 			"AddGearVanExt_GEN4_Light",
 			"AddGearVanExt_6B43_Light",
