@@ -24,23 +24,19 @@ class EdgeCases {
 			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.23)); // -13
 			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.08)); // -11
 			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_GEN4_Light") {
-					// change handbook price
-					database.templates.handbook.Items[handbookItemIndex].Price = Math.round(database.templates.handbook.Items[handbookItemIndex].Price - (database.templates.handbook.Items[handbookItemIndex].Price * 0.20)); // 95019
-					
-					// change flea price (if it has one)
-					if (database.templates.prices["AddGearVanExt_GEN4_Light"]) {
-						database.templates.prices["AddGearVanExt_GEN4_Light"] = database.templates.handbook.Items[handbookItemIndex].Price;
-					}
-					
-					// add trade offer
-					if (config.EnableTradeOffers)
-						core.createTraderOffer("AddGearVanExt_GEN4_Light", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", database.templates.handbook.Items[handbookItemIndex].Price, 3);
-					
-					break;
-				}
-			}
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_GEN4_Light"})
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.20)); // 95019
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_GEN4_Light"])
+				database.templates.prices["AddGearVanExt_GEN4_Light"] = dbItemHandbook.Price;
+			
+			// add trade offer
+			if (config.EnableTradeOffers)
+				core.createTraderOffer("AddGearVanExt_GEN4_Light", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 3);
 			
 		}
 		
@@ -68,19 +64,15 @@ class EdgeCases {
 			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.29)); // -15
 			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.40)); // -16
 			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_6B43_Light") {
-					// change handbook price
-					database.templates.handbook.Items[handbookItemIndex].Price = Math.round(database.templates.handbook.Items[handbookItemIndex].Price - (database.templates.handbook.Items[handbookItemIndex].Price * 0.60)); // 153987
-					
-					// change flea price (if it has one)
-					if (database.templates.prices["AddGearVanExt_6B43_Light"]) {
-						database.templates.prices["AddGearVanExt_6B43_Light"] = database.templates.handbook.Items[handbookItemIndex].Price;
-					}
-					
-					break;
-				}
-			}
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Light"})
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.60)); // 153987
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_6B43_Light"])
+				database.templates.prices["AddGearVanExt_6B43_Light"] = dbItemHandbook.Price;
 		}
 		
 		// 6b43 assault
@@ -104,19 +96,15 @@ class EdgeCases {
 			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.24)); // -16
 			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.30)); // -19
 			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_6B43_Assault") {
-					// change handbook price
-					database.templates.handbook.Items[handbookItemIndex].Price = Math.round(database.templates.handbook.Items[handbookItemIndex].Price - (database.templates.handbook.Items[handbookItemIndex].Price * 0.20)); // 307974
-					
-					// change flea price (if it has one)
-					if (database.templates.prices["AddGearVanExt_6B43_Assault"]) {
-						database.templates.prices["AddGearVanExt_6B43_Assault"] = database.templates.handbook.Items[handbookItemIndex].Price;
-					}
-					
-					break;
-				}
-			}
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Assault"})
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.20)); // 307974
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_6B43_Assault"])
+				database.templates.prices["AddGearVanExt_6B43_Assault"] = dbItemHandbook.Price;
 		}
 		
 		// 6b43 mobility
@@ -143,19 +131,15 @@ class EdgeCases {
 			
 			dbItem._props.armorZone = ["Chest", "Stomach"];
 			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_6B43_Light") {
-					// change handbook price
-					database.templates.handbook.Items[handbookItemIndex].Price = Math.round(database.templates.handbook.Items[handbookItemIndex].Price - (database.templates.handbook.Items[handbookItemIndex].Price * 0.40)); // 230981
-					
-					// change flea price (if it has one)
-					if (database.templates.prices["AddGearVanExt_6B43_Light"]) {
-						database.templates.prices["AddGearVanExt_6B43_Light"] = database.templates.handbook.Items[handbookItemIndex].Price;
-					}
-					
-					break;
-				}
-			}
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Mobility"})
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.40)); // 230981
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_6B43_Mobility"])
+				database.templates.prices["AddGearVanExt_6B43_Mobility"] = dbItemHandbook.Price;
 		}
 		
 		// ana2 plate
@@ -188,34 +172,24 @@ class EdgeCases {
 			dbItem._props.BluntThroughput = anaM2Rig._props.BluntThroughput;
 			dbItem._props.ArmorMaterial = anaM2Rig._props.ArmorMaterial;
 			
+			dbItem._props.speedPenaltyPercent = Math.round(anaM2Rig._props.speedPenaltyPercent - (anaM2Rig._props.speedPenaltyPercent * 0.25)); // -6
+			dbItem._props.mousePenalty = anaM2Rig._props.mousePenalty;
+			dbItem._props.weaponErgonomicPenalty =  Math.round(anaM2Rig._props.weaponErgonomicPenalty - (anaM2Rig._props.weaponErgonomicPenalty * 0.50)); // -1
 			
-			if (anaM2Rig._props.speedPenaltyPercent != 0) {
-				dbItem._props.speedPenaltyPercent = anaM2Rig._props.speedPenaltyPercent + 1;
-			} else {
-				dbItem._props.speedPenaltyPercent = anaM2Rig._props.speedPenaltyPercent;
-			}
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_ANA_M2_Armor"})
+			const rigHandbookEntry = jsonUtil.clone(database.templates.handbook.Items.find((item) => {return item.Id === "5ab8dced86f774646209ec87"}));
 			
-			if (anaM2Rig._props.mousePenalty != 0) {
-				dbItem._props.mousePenalty = anaM2Rig._props.mousePenalty + 1;
-			} else {
-				dbItem._props.mousePenalty = anaM2Rig._props.mousePenalty;
-			}
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.10)); // 61819
 			
-			if (anaM2Rig._props.weaponErgonomicPenalty != 0) {
-				dbItem._props.weaponErgonomicPenalty = anaM2Rig._props.weaponErgonomicPenalty + 1;
-			} else {
-				dbItem._props.weaponErgonomicPenalty = anaM2Rig._props.weaponErgonomicPenalty;
-			}
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_ANA_M2_Armor"])
+				database.templates.prices["AddGearVanExt_ANA_M2_Armor"] = dbItemHandbook.Price;
 			
-			// change price
-			database.templates.prices["AddGearVanExt_ANA_M2_Armor"] = 85000;
-			
-			for (const handbookItemIndex in database.templates.handbook.Items) {
-				if (database.templates.handbook.Items[handbookItemIndex].Id === "AddGearVanExt_ANA_M2_Armor") {
-					database.templates.handbook.Items[handbookItemIndex].Price = 85000;
-					break;
-				}
-			}
+			// add trade offer
+			if (config.EnableTradeOffers)
+				core.createTraderOffer("AddGearVanExt_ANA_M2_Armor", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 2);
 		}
 		
 		if (itemConfig["Armored Vests"]["AddGearVanExt_Defender2_Light"]) {
