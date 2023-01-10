@@ -14,7 +14,8 @@
 		"AddGearVanExt_Osprey_Assault_Armor": true,
 		"AddGearVanExt_RBAV_Armor": true,
 		"AddGearVanExt_Redut_Light_Olive": true,
-		"AddGearVanExt_Redut_Light_Woodland": true
+		"AddGearVanExt_Redut_Light_Woodland": true,
+		"AddGearVanExt_Trooper": true
 	},
 	"Rigs": {
 		"AddGearVanExt_Bagariy_No_Bear": true,

@@ -107,7 +107,8 @@ class Mod
 				["AddGearVanExt_6B5_15_Khaki"],
 				["AddGearVanExt_6B5_16_Flora"],
 				["AddGearVanExt_Redut_Light_Olive"],
-				["AddGearVanExt_Redut_Light_Woodland"]
+				["AddGearVanExt_Redut_Light_Woodland"],
+				["AddGearVanExt_Trooper"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
