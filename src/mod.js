@@ -31,7 +31,9 @@ class Mod
 			"AddGearVanExt_Osprey_Assault_Armor",
 			"AddGearVanExt_RBAV_Armor",
 			"AddGearVanExt_Redut_Light_Olive",
-			"AddGearVanExt_Redut_Light_Woodland"
+			"AddGearVanExt_Redut_Light_Woodland",
+			"AddGearVanExt_Redut_Assault_Olive",
+			"AddGearVanExt_Redut_Assault_Woodland"
 		];
 		
 		// add retextures
@@ -108,7 +110,9 @@ class Mod
 				["AddGearVanExt_6B5_16_Flora"],
 				["AddGearVanExt_Redut_Light_Olive"],
 				["AddGearVanExt_Redut_Light_Woodland"],
-				["AddGearVanExt_Trooper"]
+				["AddGearVanExt_Trooper"],
+				["AddGearVanExt_Redut_Assault_Olive"],
+				["AddGearVanExt_Redut_Assault_Woodland"],
 			];
 			
 			// The survivalist path. Unprotected, but dangerous

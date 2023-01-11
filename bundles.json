@@ -133,6 +133,22 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/redut_assault_olive.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/redut_assault_woodland.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }

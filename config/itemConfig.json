@@ -15,6 +15,8 @@
 		"AddGearVanExt_RBAV_Armor": true,
 		"AddGearVanExt_Redut_Light_Olive": true,
 		"AddGearVanExt_Redut_Light_Woodland": true,
+		"AddGearVanExt_Redut_Assault_Olive": true,
+		"AddGearVanExt_Redut_Assault_Woodland": true,
 		"AddGearVanExt_Trooper": true
 	},
 	"Backpacks": {

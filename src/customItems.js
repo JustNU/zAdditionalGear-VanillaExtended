@@ -548,7 +548,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 1.5; // 1
+				dbItem._props.Weight = dbItem._props.Weight - 1.5; // 12
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -574,6 +574,74 @@ class CustomItems {
 			// change flea price (if it has one)
 			if (database.templates.prices["AddGearVanExt_Redut_Light_Woodland"])
 				database.templates.prices["AddGearVanExt_Redut_Light_Woodland"] = dbItemHandbook.Price;
+		}
+		
+		if (itemConfig["Armored Vests"]["AddGearVanExt_Redut_Assault_Olive"]) {
+			core.addItemRetexture("AddGearVanExt_Redut_Assault_Olive", itemData["AddGearVanExt_Redut_Assault_Olive"].BaseItemID, itemData["AddGearVanExt_Redut_Assault_Olive"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Redut_Assault_Olive"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Redut_Assault_Olive"];
+			
+			// change weight
+			if (dbItem._props.Weight > 0)
+				dbItem._props.Weight = dbItem._props.Weight - 2; // 14.5
+			
+			// change inventory space
+			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
+				dbItem._props.Height = 3;
+				dbItem._props.Width = 4;
+			}
+			
+			// change durability
+			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.40)); // 60
+			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.40)); // 60
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.70)); // -11
+			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.06)); // -14
+			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.14)); // -12
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Redut_Assault_Olive"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.20)); // 150637
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Redut_Assault_Olive"])
+				database.templates.prices["AddGearVanExt_Redut_Assault_Olive"] = dbItemHandbook.Price;
+		}
+		
+		if (itemConfig["Armored Vests"]["AddGearVanExt_Redut_Assault_Woodland"]) {
+			core.addItemRetexture("AddGearVanExt_Redut_Assault_Woodland", itemData["AddGearVanExt_Redut_Assault_Woodland"].BaseItemID, itemData["AddGearVanExt_Redut_Assault_Woodland"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Redut_Assault_Olive"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Redut_Assault_Woodland"];
+			
+			// change weight
+			if (dbItem._props.Weight > 0)
+				dbItem._props.Weight = dbItem._props.Weight - 2; // 14.5
+			
+			// change inventory space
+			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
+				dbItem._props.Height = 3;
+				dbItem._props.Width = 4;
+			}
+			
+			// change durability
+			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.40)); // 60
+			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.40)); // 60
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.70)); // -11
+			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.06)); // -14
+			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.14)); // -12
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Redut_Assault_Woodland"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.20)); // 150637
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"])
+				database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"] = dbItemHandbook.Price;
 		}
 	}
 }

@@ -98,5 +98,15 @@
         "Name": "Mystery Ranch NICE COMM 3 BVS frame system",
 		"ShortName": "COMM 3",
 		"Description": "The NICE Frame special system for carrying oversized or heavy loads with an installed COMM 3 backpack for carrying radio systems.\nThe COMM 3 main bay is designed for PRC117F or G, PRC119F, 152, or ASIP radios. The Hitchhiker and Daypack lid allows you to carry separate gear if needed. The modular NICE COMM 3 system is ready to adapt to changing tasks.\nAn extremely rare thing, for which a real hunt is conducted in Tarkov."
+    },
+	"AddGearVanExt_Redut_Assault_Olive": {
+        "Name": "FORT Redut-M body armor (Assault, Olive Green)",
+		"ShortName": "Redut Assault",
+		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Assault kit."
+    },
+	"AddGearVanExt_Redut_Assault_Woodland": {
+        "Name": "FORT Redut-M body armor (Assault, Woodland)",
+		"ShortName": "Redut Assault",
+		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Assault kit."
     }
 }
