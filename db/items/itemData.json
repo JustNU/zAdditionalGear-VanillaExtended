@@ -93,5 +93,10 @@
 		"BaseItemID": "5c0e655586f774045612eeb2",
 		"BundlePath": "AddGearVanExt/ArmoredVests/trooper.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_NICE_COMM_3_BVS": {
+		"BaseItemID": "628bc7fb408e2b2e9c0801b1",
+		"BundlePath": "AddGearVanExt/Backpacks/nice_comm_3_bvs.bundle",
+		"LootWeigthMult": 1
 	}
 }

@@ -17,6 +17,9 @@
 		"AddGearVanExt_Redut_Light_Woodland": true,
 		"AddGearVanExt_Trooper": true
 	},
+	"Backpacks": {
+		"AddGearVanExt_NICE_COMM_3_BVS": true
+	},
 	"Rigs": {
 		"AddGearVanExt_Bagariy_No_Bear": true,
 		"AddGearVanExt_6B5_15_Khaki": true,
