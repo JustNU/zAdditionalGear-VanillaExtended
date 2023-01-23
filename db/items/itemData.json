@@ -108,5 +108,10 @@
 		"BaseItemID": "5ca21c6986f77479963115a7",
 		"BundlePath": "AddGearVanExt/ArmoredVests/redut_assault_woodland.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_TacTec_Armor": {
+		"BaseItemID": "5ca21c6986f77479963115a7",
+		"BundlePath": "AddGearVanExt/ArmoredVests/tactec_armor.bundle",
+		"LootWeigthMult": 1
 	}
 }
