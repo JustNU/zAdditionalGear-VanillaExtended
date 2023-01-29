@@ -110,7 +110,7 @@
 		"LootWeigthMult": 1
 	},
 	"AddGearVanExt_TacTec_Armor": {
-		"BaseItemID": "5ca21c6986f77479963115a7",
+		"BaseItemID": "5fd4c474dd870108a754b241",
 		"BundlePath": "AddGearVanExt/ArmoredVests/tactec_armor.bundle",
 		"LootWeigthMult": 1
 	}

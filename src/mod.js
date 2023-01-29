@@ -33,7 +33,8 @@ class Mod
 			"AddGearVanExt_Redut_Light_Olive",
 			"AddGearVanExt_Redut_Light_Woodland",
 			"AddGearVanExt_Redut_Assault_Olive",
-			"AddGearVanExt_Redut_Assault_Woodland"
+			"AddGearVanExt_Redut_Assault_Woodland",
+			"AddGearVanExt_TacTec_Armor"
 		];
 		
 		// add retextures
@@ -113,6 +114,7 @@ class Mod
 				["AddGearVanExt_Trooper"],
 				["AddGearVanExt_Redut_Assault_Olive"],
 				["AddGearVanExt_Redut_Assault_Woodland"],
+				["AddGearVanExt_TacTec_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
