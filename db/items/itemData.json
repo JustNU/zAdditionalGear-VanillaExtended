@@ -113,5 +113,20 @@
 		"BaseItemID": "5fd4c474dd870108a754b241",
 		"BundlePath": "AddGearVanExt/ArmoredVests/tactec_armor.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_THOR_ICBA_Light": {
+		"BaseItemID": "60a283193cb70855c43a381d",
+		"BundlePath": "AddGearVanExt/ArmoredVests/thor_icba_light.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_THOR_ICBA_Assault": {
+		"BaseItemID": "60a283193cb70855c43a381d",
+		"BundlePath": "AddGearVanExt/ArmoredVests/thor_icba_assault.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_THOR_ICBA_Mobility": {
+		"BaseItemID": "60a283193cb70855c43a381d",
+		"BundlePath": "AddGearVanExt/ArmoredVests/thor_icba_mobility.bundle",
+		"LootWeigthMult": 1
 	}
 }

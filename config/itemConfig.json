@@ -18,7 +18,10 @@
 		"AddGearVanExt_Redut_Assault_Olive": true,
 		"AddGearVanExt_Redut_Assault_Woodland": true,
 		"AddGearVanExt_Trooper": true,
-		"AddGearVanExt_TacTec_Armor": true
+		"AddGearVanExt_TacTec_Armor": true,
+		"AddGearVanExt_THOR_ICBA_Light": true,
+		"AddGearVanExt_THOR_ICBA_Assault": true,
+		"AddGearVanExt_THOR_ICBA_Mobility": true
 	},
 	"Backpacks": {
 		"AddGearVanExt_NICE_COMM_3_BVS": true
