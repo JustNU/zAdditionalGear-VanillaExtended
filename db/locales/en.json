@@ -2,7 +2,7 @@
 	"AddGearVanExt_GEN4_Light": {
         "Name": "IOTV Gen4 body armor (light kit, Multicam)",
 		"ShortName": "Gen4 Light",
-		"Description": "The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Light kit."
+		"Description": "The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Barebones kit with no additional protection."
     },
 	"AddGearVanExt_6B23_2_Digital_Flora": {
         "Name": "6B23-2 body armor (Digital Flora)",
@@ -17,7 +17,7 @@
 	"AddGearVanExt_6B43_Light": {
         "Name": "6B43 6A Zabralo-Sh body armor (light kit)",
 		"ShortName": "6B43 Light",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no additional protection."
+		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no extra protection."
     },
 	"AddGearVanExt_6B43_Mobility": {
         "Name": "6B43 6A Zabralo-Sh body armor (high mobility kit)",
@@ -113,5 +113,20 @@
         "Name": "5.11 Tactical TacTec plate carrier (Khaki)",
 		"ShortName": "TacTec Plate",
 		"Description": "A plate carrier with armor plates made of polyethylene (Russian GOST class 5 protection). Manufactured by 5.11 Tactical."
-    }
+    },
+	"AddGearVanExt_THOR_ICBA_Light": {
+        "Name": "NFM THOR Integrated Carrier body armor (light kit, tan)",
+		"ShortName": "THOR IC Light",
+		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Barebones kit with no extra protection."
+	},
+	"AddGearVanExt_THOR_ICBA_Assault": {
+        "Name": "NFM THOR Integrated Carrier body armor (assault kit, tan)",
+		"ShortName": "THOR IC Assault",
+		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Increased ergonomics assault kit."
+	},
+	"AddGearVanExt_THOR_ICBA_Mobility": {
+        "Name": "NFM THOR Integrated Carrier body armor (high mobility kit, tan)",
+		"ShortName": "THOR IC HMK",
+		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Increased mobility and comfort kit."
+	}
 }
