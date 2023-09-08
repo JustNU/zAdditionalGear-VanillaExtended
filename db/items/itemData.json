@@ -128,5 +128,10 @@
 		"BaseItemID": "60a283193cb70855c43a381d",
 		"BundlePath": "AddGearVanExt/ArmoredVests/thor_icba_mobility.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Strandhogg_Armor": {
+		"BaseItemID": "609e8540d5c319764c2bc2e9",
+		"BundlePath": "AddGearVanExt/ArmoredVests/strandhogg_armor.bundle",
+		"LootWeigthMult": 1
 	}
 }

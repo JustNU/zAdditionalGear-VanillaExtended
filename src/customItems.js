@@ -645,8 +645,7 @@ class CustomItems {
 			if (database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"])
 				database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"] = dbItemHandbook.Price;
 		}
-		
-		
+				
 		if (itemConfig["Armored Vests"]["AddGearVanExt_TacTec_Armor"]) {
 			core.addItemRetexture("AddGearVanExt_TacTec_Armor", itemData["AddGearVanExt_TacTec_Armor"].BaseItemID, itemData["AddGearVanExt_TacTec_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_TacTec_Armor"].LootWeigthMult);
 			const dbItem = database.templates.items["AddGearVanExt_TacTec_Armor"];

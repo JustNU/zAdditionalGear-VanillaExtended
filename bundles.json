@@ -181,6 +181,14 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/strandhogg_armor.bundle",
+            "dependencyKeys": [
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }
