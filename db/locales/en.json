@@ -30,9 +30,9 @@
 		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Increased ergonomics assault kit."
     },
 	"AddGearVanExt_ANA_M2_Armor": {
-        "Name": "ANA Tactical M2 plate carrier",
-		"ShortName": "ANA M2 Plate",
-		"Description": "A tactical rig with additional class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Plate carrier variant. Manufactured by ANA Tactical."
+        "Name": "ANA Tactical M2 armor",
+		"ShortName": "ANA M2 armor",
+		"Description": "A tactical rig with additional class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Armor variant. Manufactured by ANA Tactical."
     },
 	"AddGearVanExt_Defender2_Light": {
         "Name": "FORT Defender-2 body armor (Light, Olive Drab)",
@@ -45,17 +45,17 @@
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_Osprey_Armor": {
-        "Name": "CQC Osprey MK4A plate carrier (MTP)",
-		"ShortName": "Osprey MK4A Plate",
+        "Name": "CQC Osprey MK4A armor (MTP)",
+		"ShortName": "Osprey MK4A armor",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. Base kit."
     },
 	"AddGearVanExt_Osprey_Assault_Armor": {
-        "Name": "CQC Osprey MK4A plate carrier (Protection, MTP)",
-		"ShortName": "Osprey MK4A Plate (P)",
+        "Name": "CQC Osprey MK4A armor (Protection, MTP)",
+		"ShortName": "Osprey MK4A armor (P)",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Protection preset is provided with additional protection and heavier armor plate."
     },
 	"AddGearVanExt_RBAV_Armor": {
-        "Name": "ECLiPSE RBAV-AF plate carrier (Ranger Green)",
+        "Name": "ECLiPSE RBAV-AF armor (Ranger Green)",
 		"ShortName": "RBAV-AF Plate",
 		"Description": "This new BAE ECLiPSE RBAV (Releasable Body Armor Vest, Air Force) variant is designed specifically for the Guardian Angel Weapon System (USAF PJ) and contains several new features not found in other versions."
     },
@@ -110,8 +110,8 @@
 		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Assault kit."
     },
 	"AddGearVanExt_TacTec_Armor": {
-        "Name": "5.11 Tactical TacTec plate carrier (Khaki)",
-		"ShortName": "TacTec Plate",
+        "Name": "5.11 Tactical TacTec armor (Khaki)",
+		"ShortName": "TacTec armor",
 		"Description": "A plate carrier with armor plates made of polyethylene (Russian GOST class 5 protection). Manufactured by 5.11 Tactical."
     },
 	"AddGearVanExt_THOR_ICBA_Light": {
@@ -128,5 +128,10 @@
         "Name": "NFM THOR Integrated Carrier body armor (high mobility kit, tan)",
 		"ShortName": "THOR IC HMK",
 		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Increased mobility and comfort kit."
+	},
+	"AddGearVanExt_Strandhogg_Armor": {
+        "Name": "FirstSpear Strandhogg armor (Ranger Green)",
+		"ShortName": "Strandhogg armor",
+		"Description": "Taking its name from an Old Norse Viking term for a lightning raid, Strandhögg was one of the first formalized battle tactics to use covert infiltrators in advance of an actual raiding operation. Strandhögg was a tactical game-changer in its time, just like the technological advances FirstSpear is bringing forward in this line of plate carriers."
 	}
 }

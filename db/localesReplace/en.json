@@ -67,5 +67,8 @@
         "Name": "NFM THOR Integrated Carrier body armor (full protection, tan)",
 		"ShortName": "THOR IC Full",
 		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Full protection kit."
+	},
+	"61bcc89aef0f505f0c6cd0fc": {
+		"ShortName": "Strandhogg rig"
 	}
 }

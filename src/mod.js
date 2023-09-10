@@ -37,7 +37,8 @@ class Mod
 			"AddGearVanExt_TacTec_Armor",
 			"AddGearVanExt_THOR_ICBA_Light",
 			"AddGearVanExt_THOR_ICBA_Assault",
-			"AddGearVanExt_THOR_ICBA_Mobility"
+			"AddGearVanExt_THOR_ICBA_Mobility",
+			"AddGearVanExt_Strandhogg_Armor"
 		];
 		
 		// add retextures
@@ -111,7 +112,11 @@ class Mod
 				["AddGearVanExt_Trooper"],
 				["AddGearVanExt_Redut_Assault_Olive"],
 				["AddGearVanExt_Redut_Assault_Woodland"],
-				["AddGearVanExt_TacTec_Armor"]
+				["AddGearVanExt_TacTec_Armor"],
+				["AddGearVanExt_THOR_ICBA_Light"],
+				["AddGearVanExt_THOR_ICBA_Assault"],
+				["AddGearVanExt_THOR_ICBA_Mobility"],
+				["AddGearVanExt_Strandhogg_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
