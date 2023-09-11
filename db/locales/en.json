@@ -133,5 +133,15 @@
         "Name": "FirstSpear Strandhogg armor (Ranger Green)",
 		"ShortName": "Strandhogg armor",
 		"Description": "Taking its name from an Old Norse Viking term for a lightning raid, Strandhögg was one of the first formalized battle tactics to use covert infiltrators in advance of an actual raiding operation. Strandhögg was a tactical game-changer in its time, just like the technological advances FirstSpear is bringing forward in this line of plate carriers."
+	},
+	"AddGearVanExt_Redut_Full_Olive": {
+        "Name": "FORT Redut-T5 body armor (Olive)",
+		"ShortName": "Redut Full",
+		"Description": "The FORT \"Redut T5\" armor vest is a reinforced version of Redut armor series, designed with account of the many years of experience in counter-terrorism operations in the Russian Federation."
+	},
+	"AddGearVanExt_Redut_Mobility_Woodland": {
+        "Name": "FORT Redut-M body armor (Mobility, Woodland)",
+		"ShortName": "Redut Mobility",
+		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Medium protection kit for better mobility."
 	}
 }

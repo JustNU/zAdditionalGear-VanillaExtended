@@ -22,7 +22,9 @@
 		"AddGearVanExt_THOR_ICBA_Light": true,
 		"AddGearVanExt_THOR_ICBA_Assault": true,
 		"AddGearVanExt_THOR_ICBA_Mobility": true,
-		"AddGearVanExt_Strandhogg_Armor": true
+		"AddGearVanExt_Strandhogg_Armor": true,
+		"AddGearVanExt_Redut_Full_Olive": true,
+		"AddGearVanExt_Redut_Mobility_Woodland": true
 	},
 	"Backpacks": {
 		"AddGearVanExt_NICE_COMM_3_BVS": true
