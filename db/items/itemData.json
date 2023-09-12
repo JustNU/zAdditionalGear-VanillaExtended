@@ -146,7 +146,7 @@
 	},
 	"AddGearVanExt_Knight_Mask_No_Wires": {
 		"BaseItemID": "62963c18dbc8ab5f0d382d0b",
-		"BundlePath": "AddGearVanExt/Facecover/knight_mask_no_wires.bundle",
+		"BundlePath": "AddGearVanExt/FaceCover/knight_mask_no_wires.bundle",
 		"LootWeigthMult": 1
 	}
 }

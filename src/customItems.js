@@ -867,7 +867,7 @@ class CustomItems {
 		}
 		
 		// KNIGHT MASK NO WIRES
-		if (itemConfig["Facecover"]["AddGearVanExt_Knight_Mask_No_Wires"]) {
+		if (itemConfig["Face Cover"]["AddGearVanExt_Knight_Mask_No_Wires"]) {
 			core.addItemRetexture("AddGearVanExt_Knight_Mask_No_Wires", itemData["AddGearVanExt_Knight_Mask_No_Wires"].BaseItemID, itemData["AddGearVanExt_Knight_Mask_No_Wires"].BundlePath, config.EnableTradeOffers, config.AddToBots, itemData["AddGearVanExt_Knight_Mask_No_Wires"].LootWeigthMult);
 			const dbItem = database.templates.items["AddGearVanExt_Knight_Mask_No_Wires"];
 			

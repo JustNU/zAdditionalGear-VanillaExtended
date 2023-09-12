@@ -207,7 +207,7 @@
 			]
         },
 		{
-            "key": "AddGearVanExt/Facecover/knight_mask_no_wires.bundle",
+            "key": "AddGearVanExt/FaceCover/knight_mask_no_wires.bundle",
             "dependencyKeys": [
 				"assets/commonassets/physics/physicsmaterials.bundle",
 				"shaders",
