@@ -38,7 +38,8 @@ class Mod
 			"AddGearVanExt_THOR_ICBA_Light",
 			"AddGearVanExt_THOR_ICBA_Assault",
 			"AddGearVanExt_THOR_ICBA_Mobility",
-			"AddGearVanExt_Strandhogg_Armor"
+			"AddGearVanExt_Strandhogg_Armor",
+			"AddGearVanExt_Knight_Mask_No_Wires"
 		];
 		
 		// add retextures

@@ -143,5 +143,10 @@
 		"BaseItemID": "5ca2151486f774244a3b8d30",
 		"BundlePath": "AddGearVanExt/ArmoredVests/redut_m_woodland.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Knight_Mask_No_Wires": {
+		"BaseItemID": "62963c18dbc8ab5f0d382d0b",
+		"BundlePath": "AddGearVanExt/Facecover/knight_mask_no_wires.bundle",
+		"LootWeigthMult": 1
 	}
 }

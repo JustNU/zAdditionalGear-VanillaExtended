@@ -865,6 +865,15 @@ class CustomItems {
 			if (config.EnableTradeOffers)
 				core.createTraderOffer("AddGearVanExt_Strandhogg_Armor", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 3);
 		}
+		
+		// KNIGHT MASK NO WIRES
+		if (itemConfig["Facecover"]["AddGearVanExt_Knight_Mask_No_Wires"]) {
+			core.addItemRetexture("AddGearVanExt_Knight_Mask_No_Wires", itemData["AddGearVanExt_Knight_Mask_No_Wires"].BaseItemID, itemData["AddGearVanExt_Knight_Mask_No_Wires"].BundlePath, config.EnableTradeOffers, config.AddToBots, itemData["AddGearVanExt_Knight_Mask_No_Wires"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Knight_Mask_No_Wires"];
+			
+			// change headwear restict
+			dbItem._props.BlocksHeadwear = false;
+		}
 	}
 }
 
