@@ -9,7 +9,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 1; // 12
+				dbItem._props.Weight = dbItem._props.Weight - 2; // 11
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -48,7 +48,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 4; // 16
+				dbItem._props.Weight = dbItem._props.Weight - 5; // 15
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -85,7 +85,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 2; // 18
+				dbItem._props.Weight = dbItem._props.Weight - 3; // 17
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -119,7 +119,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 3; // 17
+				dbItem._props.Weight = dbItem._props.Weight - 4; // 16
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -211,7 +211,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 1 // 10.5
+				dbItem._props.Weight = dbItem._props.Weight - 1.5; // 10
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -246,7 +246,7 @@ class CustomItems {
 			
 			// change weight
 			if (rigItem._props.Weight > 0) {
-				dbItem._props.Weight = rigItem._props.Weight - 1; // 12
+				dbItem._props.Weight = rigItem._props.Weight - 2; // 11
 			} else {
 				dbItem._props.Weight = rigItem._props.Weight;
 			}
@@ -301,7 +301,7 @@ class CustomItems {
 			
 			// change weight
 			if (rigItem._props.Weight > 0) {
-				dbItem._props.Weight = rigItem._props.Weight - 1; // 12
+				dbItem._props.Weight = rigItem._props.Weight - 2; // 11
 			} else {
 				dbItem._props.Weight = rigItem._props.Weight;
 			}
@@ -516,7 +516,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 1.5; // 1
+				dbItem._props.Weight = dbItem._props.Weight - 3.5; // 10
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -550,7 +550,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 1.5; // 12
+				dbItem._props.Weight = dbItem._props.Weight - 3.5; // 10
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -584,7 +584,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 2; // 14.5
+				dbItem._props.Weight = dbItem._props.Weight - 3; // 13.5
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -618,7 +618,7 @@ class CustomItems {
 			
 			// change weight
 			if (dbItem._props.Weight > 0)
-				dbItem._props.Weight = dbItem._props.Weight - 2; // 14.5
+				dbItem._props.Weight = dbItem._props.Weight - 3; // 13.5
 			
 			// change inventory space
 			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
@@ -645,7 +645,7 @@ class CustomItems {
 			if (database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"])
 				database.templates.prices["AddGearVanExt_Redut_Assault_Woodland"] = dbItemHandbook.Price;
 		}
-				
+		
 		if (itemConfig["Armored Vests"]["AddGearVanExt_TacTec_Armor"]) {
 			core.addItemRetexture("AddGearVanExt_TacTec_Armor", itemData["AddGearVanExt_TacTec_Armor"].BaseItemID, itemData["AddGearVanExt_TacTec_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_TacTec_Armor"].LootWeigthMult);
 			const dbItem = database.templates.items["AddGearVanExt_TacTec_Armor"];
