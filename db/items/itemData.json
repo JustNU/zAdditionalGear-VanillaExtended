@@ -148,5 +148,10 @@
 		"BaseItemID": "62963c18dbc8ab5f0d382d0b",
 		"BundlePath": "AddGearVanExt/FaceCover/knight_mask_no_wires.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Banshee_Armor": {
+		"BaseItemID": "609e8540d5c319764c2bc2e9",
+		"BundlePath": "AddGearVanExt/ArmoredVests/banshee_armor.bundle",
+		"LootWeigthMult": 1
 	}
 }

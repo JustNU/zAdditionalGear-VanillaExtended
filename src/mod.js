@@ -119,7 +119,8 @@ class Mod
 				["AddGearVanExt_THOR_ICBA_Mobility"],
 				["AddGearVanExt_Strandhogg_Armor"],
 				["AddGearVanExt_Redut_Full_Olive"],
-				["AddGearVanExt_Redut_Mobility_Woodland"]
+				["AddGearVanExt_Redut_Mobility_Woodland"],
+				["AddGearVanExt_Banshee_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
