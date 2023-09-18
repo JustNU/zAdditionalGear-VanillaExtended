@@ -15,24 +15,24 @@
 		"Description": "The \"Zabralo-8\" main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
     },
 	"AddGearVanExt_6B43_Light": {
-        "Name": "6B43 6A Zabralo-Sh body armor (light kit)",
+        "Name": "6B43 6A Zabralo-Sh body armor (light kit, Digital Flora)",
 		"ShortName": "6B43 Light",
 		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Barebones kit with no extra protection."
     },
 	"AddGearVanExt_6B43_Mobility": {
-        "Name": "6B43 6A Zabralo-Sh body armor (high mobility kit)",
+        "Name": "6B43 6A Zabralo-Sh body armor (high mobility kit, Digital Flora)",
 		"ShortName": "6B43 HMK",
 		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Increased mobility and comfort kit."
     },
 	"AddGearVanExt_6B43_Assault": {
-        "Name": "6B43 6A Zabralo-Sh body armor (assault kit)",
+        "Name": "6B43 6A Zabralo-Sh body armor (assault kit, Digital Flora)",
 		"ShortName": "6B43 Assault",
 		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Increased ergonomics assault kit."
     },
 	"AddGearVanExt_ANA_M2_Armor": {
         "Name": "ANA Tactical M2 armor",
 		"ShortName": "ANA M2 armor",
-		"Description": "A tactical rig with additional class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Armor variant. Manufactured by ANA Tactical."
+		"Description": "A tactical plate carrier with class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Armor variant. Manufactured by ANA Tactical."
     },
 	"AddGearVanExt_Defender2_Light": {
         "Name": "FORT Defender-2 body armor (Light, Olive Drab)",
@@ -40,8 +40,8 @@
 		"Description": "The FORT OK \"Defender-2\" operational kit is a modification of the popular body armor FORT \"Defender\" designed for both VIP and for employees of operational combat units. The kit uses the maximum capabilities of the modular principle of building armor based on steel plates."
     },
 	"AddGearVanExt_Bagariy_Armor": {
-        "Name": "NPP KlASS Bagariy body armor (BEAR)",
-		"ShortName": "Bagariy BEAR",
+        "Name": "NPP KlASS Bagariy body armor (BEAR, Digital Flora)",
+		"ShortName": "Bagariy BEAR armor",
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_Osprey_Armor": {
@@ -56,17 +56,17 @@
     },
 	"AddGearVanExt_RBAV_Armor": {
         "Name": "ECLiPSE RBAV-AF armor (Ranger Green)",
-		"ShortName": "RBAV-AF Plate",
+		"ShortName": "RBAV-AF armor",
 		"Description": "This new BAE ECLiPSE RBAV (Releasable Body Armor Vest, Air Force) variant is designed specifically for the Guardian Angel Weapon System (USAF PJ) and contains several new features not found in other versions."
     },
 	"AddGearVanExt_Bagariy_No_Bear": {
-        "Name": "NPP KlASS Bagariy armored rig",
-		"ShortName": "Bagariy Rig",
+        "Name": "NPP KlASS Bagariy armored rig (Digital Flora)",
+		"ShortName": "Bagariy rig",
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces. Actively was used by PMC BEAR as the main heavy body armor."
     },
 	"AddGearVanExt_Bagariy_Armor_No_Bear": {
-        "Name": "NPP KlASS Bagariy body armor",
-		"ShortName": "Bagariy",
+        "Name": "NPP KlASS Bagariy body armor (Digital Flora)",
+		"ShortName": "Bagariy armor",
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_6B5_15_Khaki": {
@@ -95,7 +95,7 @@
 		"Description": "A plate armor vest by HighCom. The lightweight AR500 class 4 (Russian GOST) protection plates cover only the chest and back areas. Multicam version."
     },
 	"AddGearVanExt_NICE_COMM_3_BVS": {
-        "Name": "Mystery Ranch NICE COMM 3 BVS frame system",
+        "Name": "Mystery Ranch NICE COMM 3 BVS frame system (tan)",
 		"ShortName": "COMM 3",
 		"Description": "The NICE Frame special system for carrying oversized or heavy loads with an installed COMM 3 backpack for carrying radio systems.\nThe COMM 3 main bay is designed for PRC117F or G, PRC119F, 152, or ASIP radios. The Hitchhiker and Daypack lid allows you to carry separate gear if needed. The modular NICE COMM 3 system is ready to adapt to changing tasks.\nAn extremely rare thing, for which a real hunt is conducted in Tarkov."
     },
@@ -135,7 +135,7 @@
 		"Description": "Taking its name from an Old Norse Viking term for a lightning raid, Strandhögg was one of the first formalized battle tactics to use covert infiltrators in advance of an actual raiding operation. Strandhögg was a tactical game-changer in its time, just like the technological advances FirstSpear is bringing forward in this line of plate carriers."
 	},
 	"AddGearVanExt_Redut_Full_Olive": {
-        "Name": "FORT Redut-T5 body armor (Olive)",
+        "Name": "FORT Redut-T5 body armor (Olive Green)",
 		"ShortName": "Redut Full",
 		"Description": "The FORT \"Redut T5\" armor vest is a reinforced version of Redut armor series, designed with account of the many years of experience in counter-terrorism operations in the Russian Federation."
 	},
@@ -153,5 +153,10 @@
 		"Description": "The Banshee Rifle Plate Carrier was designed to meet and exceed the needs of law enforcement, military, and tactical operators. This ultra lightweight, low profile, high-quality plate carrier has great load carrying capacity. Ideal for law enforcement patrol officers for use in high threat active shooter situations, multi-assault counter terrorism action capabilities (MACTAC) and counter terrorism direct actions.",
 		"Name": "Shellback Tactical Banshee armor (A-TACS AU)",
 		"ShortName": "Banshee"
+	},
+	"AddGearVanExt_ANA_M1_Armor": {
+		"Description": "A tactical plate carrier with class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Manufactured by ANA Tactical.",
+		"Name": "ANA Tactical M1 armor (OD Green)",
+		"ShortName": "ANA M1 armor"
 	}
 }

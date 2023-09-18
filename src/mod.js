@@ -40,7 +40,8 @@ class Mod
 			"AddGearVanExt_THOR_ICBA_Mobility",
 			"AddGearVanExt_Strandhogg_Armor",
 			"AddGearVanExt_Knight_Mask_No_Wires",
-			"AddGearVanExt_Banshee_Armor"
+			"AddGearVanExt_Banshee_Armor",
+			"AddGearVanExt_ANA_M1_Armor"
 		];
 		
 		// add retextures
@@ -121,7 +122,8 @@ class Mod
 				["AddGearVanExt_Strandhogg_Armor"],
 				["AddGearVanExt_Redut_Full_Olive"],
 				["AddGearVanExt_Redut_Mobility_Woodland"],
-				["AddGearVanExt_Banshee_Armor"]
+				["AddGearVanExt_Banshee_Armor"],
+				["AddGearVanExt_ANA_M1_Armor"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous

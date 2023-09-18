@@ -1,7 +1,7 @@
 {
 	"628d0618d1ba6e4fa07ce5a4": {
-		"Name": "NPP KlASS Bagariy armored rig (BEAR)",
-        "ShortName": "Bagariy Rig BEAR"
+		"Name": "NPP KlASS Bagariy armored rig (BEAR, Digital Flora)",
+        "ShortName": "Bagariy BEAR rig"
 	},
 	"5b44cd8b86f774503d30cba2": {
         "Name": "IOTV Gen4 body armor (full protection, Multicam)"
@@ -13,7 +13,7 @@
         "Name": "IOTV Gen4 body armor (high mobility kit, Multicam)"
 	},
 	"545cdb794bdc2d3a198b456a": {
-        "Name": "6B43 6A Zabralo-Sh body armor (full protection)",
+        "Name": "6B43 6A Zabralo-Sh body armor (full protection, Digital Flora)",
 		"ShortName": "6B43 Full",
 		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Full protection kit."
     },
@@ -21,15 +21,12 @@
         "ShortName": "ANA M2 Rig"
 	},
 	"60a3c68c37ea821725773ef5": {
-        "Name": "CQC Osprey MK4A armored rig (Protection, MTP)",
 		"ShortName": "Osprey MK4A Rig (P)"
     },
 	"60a3c70cde5f453f634816a3": {
-        "Name": "CQC Osprey MK4A armored rig (Assault, MTP)",
 		"ShortName": "Osprey MK4A Rig (A)"
     },
 	"628dc750b910320f4c27a732": {
-        "Name": "ECLiPSE RBAV-AF armored rig (Ranger Green)",
 		"ShortName": "RBAV-AF Rig"
     },
 	"5c0e57ba86f7747fa141986d": {
@@ -57,10 +54,10 @@
         "Name": "HighCom Trooper TFO body armor (USEC, Multicam)"
 	},
 	"628bc7fb408e2b2e9c0801b1": {
-        "Name": "Mystery Ranch NICE COMM 3 BVS frame system (Birdeye)"
+        "Name": "Mystery Ranch NICE COMM 3 BVS frame system (Goons edition, tan)"
 	},
 	"5b44cad286f77402a54ae7e5": {
-        "Name": "5.11 Tactical TacTec armored rig (Khaki)",
+        "Name": "5.11 Tactical TacTec plate carrier (Khaki)",
 		"ShortName": "TacTec Rig"
 	},
 	"60a283193cb70855c43a381d": {
@@ -70,5 +67,11 @@
 	},
 	"61bcc89aef0f505f0c6cd0fc": {
 		"ShortName": "Strandhogg rig"
+	},
+	"639343fce101f4caa40a4ef3": {
+		"ShortName": "Banshee rig"
+	},
+	"5c0e722886f7740458316a57": {
+		"ShortName": "ANA M1 rig"
 	}
 }
