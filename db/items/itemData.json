@@ -153,5 +153,10 @@
 		"BaseItemID": "609e8540d5c319764c2bc2e9",
 		"BundlePath": "AddGearVanExt/ArmoredVests/banshee_armor.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_ANA_M1_Armor": {
+		"BaseItemID": "5c0e53c886f7747fa54205c7",
+		"BundlePath": "AddGearVanExt/ArmoredVests/ana_m1_armor.bundle",
+		"LootWeigthMult": 1
 	}
 }

@@ -1,0 +1,41 @@
+0 MonoBehaviour Base
+ 0 PPtr<GameObject> m_GameObject
+  0 int m_FileID = 0
+  0 SInt64 m_PathID = -4639073150869847002
+ 1 UInt8 m_Enabled = 1
+ 0 PPtr<MonoScript> m_Script
+  0 int m_FileID = 0
+  0 SInt64 m_PathID = 8184174339162719726
+ 1 string m_Name = ""
+ 0 Vector3f pivotPosition
+  0 float x = 0.0058425367
+  0 float y = -0.014941618
+  0 float z = 1.3176008
+ 0 Quaternionf pivotRotation
+  0 float x = -2.7210975E-08
+  0 float y = -0.7826082
+  0 float z = -0.62251455
+  0 float w = 3.420889E-08
+ 0 Vector3f scale
+  0 float x = 0.6666667
+  0 float y = 0.6666667
+  0 float z = 0.6666667
+ 0 Vector3f SpawnPosition
+  0 float x = 0
+  0 float y = 0
+  0 float z = 0
+ 0 IconSettings Icon
+  0 Vector3f position
+   0 float x = 0
+   0 float y = 0
+   0 float z = 0
+  1 UInt8 hasOffset = 0
+  0 Quaternionf rotation
+   0 float x = -0.1710669
+   0 float y = 0.6861035
+   0 float z = 0.6861006
+   0 float w = 0.17106763
+  0 float boundsScale = 1
+  0 float perspective = 15
+  1 UInt8 orthographic = 0
+  0 float orthographicSize = 10

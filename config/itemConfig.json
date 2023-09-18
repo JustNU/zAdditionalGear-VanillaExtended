@@ -25,7 +25,8 @@
 		"AddGearVanExt_Strandhogg_Armor": true,
 		"AddGearVanExt_Redut_Full_Olive": true,
 		"AddGearVanExt_Redut_Mobility_Woodland": true,
-		"AddGearVanExt_Banshee_Armor": true
+		"AddGearVanExt_Banshee_Armor": true,
+		"AddGearVanExt_ANA_M1_Armor": true
 	},
 	"Backpacks": {
 		"AddGearVanExt_NICE_COMM_3_BVS": true
