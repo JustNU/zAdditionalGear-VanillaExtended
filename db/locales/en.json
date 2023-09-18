@@ -148,5 +148,10 @@
 		"Description": "A unique mask of the commander of the Goons squad, former USEC operators who decided not to flee Tarkov, but to create their own order. Compatible with headwear.",
 		"Name": "Death Knight mask (Wireless)",
 		"ShortName": "Death Knight"
+	},
+	"AddGearVanExt_Banshee_Armor": {
+		"Description": "The Banshee Rifle Plate Carrier was designed to meet and exceed the needs of law enforcement, military, and tactical operators. This ultra lightweight, low profile, high-quality plate carrier has great load carrying capacity. Ideal for law enforcement patrol officers for use in high threat active shooter situations, multi-assault counter terrorism action capabilities (MACTAC) and counter terrorism direct actions.",
+		"Name": "Shellback Tactical Banshee armor (A-TACS AU)",
+		"ShortName": "Banshee"
 	}
 }

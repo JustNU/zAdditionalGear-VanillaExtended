@@ -883,7 +883,7 @@ class CustomItems {
 			
 			// change weight
 			if (rigItem._props.Weight > 0) {
-				dbItem._props.Weight = rigItem._props.Weight - 1.9; // 6
+				dbItem._props.Weight = rigItem._props.Weight - 0.9; // 6
 			} else {
 				dbItem._props.Weight = rigItem._props.Weight;
 			}
