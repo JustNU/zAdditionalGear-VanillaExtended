@@ -41,7 +41,9 @@ class Mod
 			"AddGearVanExt_Strandhogg_Armor",
 			"AddGearVanExt_Knight_Mask_No_Wires",
 			"AddGearVanExt_Banshee_Armor",
-			"AddGearVanExt_ANA_M1_Armor"
+			"AddGearVanExt_ANA_M1_Armor",
+			"AddGearVanExt_Belt_A",
+			"AddGearVanExt_Belt_B"
 		];
 		
 		// add retextures

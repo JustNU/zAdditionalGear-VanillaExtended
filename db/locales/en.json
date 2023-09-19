@@ -158,5 +158,15 @@
 		"Description": "A tactical plate carrier with class 4 (Russian GOST) armor plates. The vest is created with the use of the best experience of Russian special forces operators. The versatility of the system makes it possible to use this vest both when carrying out city tasks and when performing tasks on rough terrain. Manufactured by ANA Tactical.",
 		"Name": "ANA Tactical M1 armor (OD Green)",
 		"ShortName": "ANA M1 armor"
+	},
+	"AddGearVanExt_Belt_A": {
+		"Description": "Belt-A is the legendary rig from the Afghan war era. This rig was adopted in 1989 and was used by the GRU Special Forces until the beginning of the 21st century.",
+		"Name": "Belt-A gear rig (OD Green)",
+		"ShortName": "Belt-A"
+	},
+	"AddGearVanExt_Belt_B": {
+		"Description": "Belt-B assault belt. This belt was adopted in 1989 and was used by the GRU Special Forces until the beginning of the 21st century. Usually used alongside Belt-A.",
+		"Name": "Belt-B assault belt (OD Green)",
+		"ShortName": "Belt-B"
 	}
 }

@@ -158,5 +158,15 @@
 		"BaseItemID": "5c0e53c886f7747fa54205c7",
 		"BundlePath": "AddGearVanExt/ArmoredVests/ana_m1_armor.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Belt_A": {
+		"BaseItemID": "5fd4c60f875c30179f5d04c2",
+		"BundlePath": "AddGearVanExt/Rigs/rig_belt_a.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Belt_B": {
+		"BaseItemID": "572b7adb24597762ae139821",
+		"BundlePath": "AddGearVanExt/Rigs/rig_belt_b.bundle",
+		"LootWeigthMult": 1
 	}
 }

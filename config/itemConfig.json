@@ -34,7 +34,9 @@
 	"Rigs": {
 		"AddGearVanExt_Bagariy_No_Bear": true,
 		"AddGearVanExt_6B5_15_Khaki": true,
-		"AddGearVanExt_6B5_16_Flora": true
+		"AddGearVanExt_6B5_16_Flora": true,
+		"AddGearVanExt_Belt_A": true,
+		"AddGearVanExt_Belt_B": true
 	},
 	"Face Cover": {
 		"AddGearVanExt_Knight_Mask_No_Wires": true

@@ -187,7 +187,7 @@ class CustomItems {
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.25)); // -6
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
-			dbItem._props.weaponErgonomicPenalty =  Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.50)); // -1
+			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.50)); // -1
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_ANA_M2_Armor"});
@@ -848,7 +848,7 @@ class CustomItems {
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.33)); // -2
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
-			dbItem._props.weaponErgonomicPenalty =  rigItem._props.weaponErgonomicPenalty;
+			dbItem._props.weaponErgonomicPenalty = rigItem._props.weaponErgonomicPenalty;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Strandhogg_Armor"});
@@ -913,7 +913,7 @@ class CustomItems {
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.33)); // -2
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
-			dbItem._props.weaponErgonomicPenalty =  Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.33)); // -2
+			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.33)); // -2
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Banshee_Armor"});
@@ -969,7 +969,7 @@ class CustomItems {
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.4)); // -3
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
-			dbItem._props.weaponErgonomicPenalty =  rigItem._props.weaponErgonomicPenalty;
+			dbItem._props.weaponErgonomicPenalty = rigItem._props.weaponErgonomicPenalty;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_ANA_M1_Armor"});
@@ -985,6 +985,406 @@ class CustomItems {
 			// add trade offer
 			if (config.EnableTradeOffers)
 				core.createTraderOffer("AddGearVanExt_ANA_M1_Armor", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 2);
+		}
+		
+		// BELT-A RIG
+		if (itemConfig["Rigs"]["AddGearVanExt_Belt_A"]) {
+			core.addItemRetexture("AddGearVanExt_Belt_A", itemData["AddGearVanExt_Belt_A"].BaseItemID, itemData["AddGearVanExt_Belt_A"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Belt_A"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Belt_A"];
+			const rigItem = database.templates.items["5c0e6a1586f77404597b4965"];
+			
+			// change weight
+			if (rigItem._props.Weight > 0) {
+				dbItem._props.Weight = rigItem._props.Weight - 0.7; // 1
+			} else {
+				dbItem._props.Weight = rigItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (rigItem._props.Width != 1 && rigItem._props.Height != 1) {
+				dbItem._props.Width = 4;
+				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = rigItem._props.Width;
+				dbItem._props.Height = rigItem._props.Height;
+			}
+			
+			// same stats as rig
+			dbItem._props.CanSellOnRagfair = rigItem._props.CanSellOnRagfair;
+			dbItem._props.Durability = rigItem._props.Durability;
+			dbItem._props.MaxDurability = rigItem._props.MaxDurability;
+			dbItem._props.armorZone = rigItem._props.armorZone;
+			dbItem._props.armorClass = rigItem._props.armorClass;
+			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
+			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
+			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 1.0)); // 0
+			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
+			dbItem._props.weaponErgonomicPenalty = rigItem._props.weaponErgonomicPenalty;
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Belt_A"});
+			const rigHandbookEntry = database.templates.handbook.Items.find((item) => {return item.Id === "5c0e6a1586f77404597b4965"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.34)); // 26448
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Belt_A"])
+				database.templates.prices["AddGearVanExt_Belt_A"] = dbItemHandbook.Price;
+			
+			// add trade offer
+			if (config.EnableTradeOffers)
+				core.createTraderOffer("AddGearVanExt_Belt_A", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 2);
+		}
+	
+		// BELT-B RIG
+		if (itemConfig["Rigs"]["AddGearVanExt_Belt_B"]) {
+			core.addItemRetexture("AddGearVanExt_Belt_B", itemData["AddGearVanExt_Belt_B"].BaseItemID, itemData["AddGearVanExt_Belt_B"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Belt_B"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Belt_B"];
+			const rigItem = database.templates.items["5c0e6a1586f77404597b4965"];
+			
+			// change weight
+			if (rigItem._props.Weight > 0) {
+				dbItem._props.Weight = rigItem._props.Weight - 1.0; // 0.7
+			} else {
+				dbItem._props.Weight = rigItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (rigItem._props.Width != 1 && rigItem._props.Height != 1) {
+				dbItem._props.Width = 4;
+				dbItem._props.Height = 1;
+			} else {
+				dbItem._props.Width = rigItem._props.Width;
+				dbItem._props.Height = rigItem._props.Height;
+			}
+			
+			// same stats as rig
+			dbItem._props.CanSellOnRagfair = rigItem._props.CanSellOnRagfair;
+			dbItem._props.Durability = rigItem._props.Durability;
+			dbItem._props.MaxDurability = rigItem._props.MaxDurability;
+			dbItem._props.armorZone = rigItem._props.armorZone;
+			dbItem._props.armorClass = rigItem._props.armorClass;
+			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
+			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
+			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = rigItem._props.speedPenaltyPercent;
+			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
+			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 1.0)); // 0
+			
+			// rig layout
+			dbItem._props.RigLayoutName = "sprofi_mk2";
+			dbItem._props.Grids = [
+				{
+					"_id": "60a621c59c197e4e8c4455e8",
+					"_name": "1",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+					"cellsH": 1,
+					"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455e9",
+					"_name": "2",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455ea",
+					"_name": "3",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455eb",
+					"_name": "4",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455ec",
+					"_name": "5",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455ed",
+					"_name": "6",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455ee",
+					"_name": "7",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455ef",
+					"_name": "8",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 0,
+						"cellsV": -1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a",
+									"54009119af1c881c07000029"
+								],
+								"Filter": []
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455f0",
+					"_name": "9",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 0,
+						"cellsV": -1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a",
+									"54009119af1c881c07000029"
+								],
+								"Filter": []
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455f1",
+					"_name": "10",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 0,
+						"cellsV": -1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a",
+									"54009119af1c881c07000029"
+								],
+								"Filter": []
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a621c59c197e4e8c4455f2",
+					"_name": "11",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				},
+				{
+					"_id": "60a65b5ff3cdbd565f577a54",
+					"_name": "12",
+					"_parent": "60a621c49c197e4e8c4455e6",
+					"_props": {
+						"cellsH": 1,
+						"cellsV": 1,
+						"filters": [
+							{
+								"ExcludedFilter": [
+									"5448bf274bdc2dfc2f8b456a"
+								],
+								"Filter": [
+									"54009119af1c881c07000029"
+								]
+							}
+						],
+						"isSortingTable": false,
+						"maxCount": 0,
+						"maxWeight": 0,
+						"minCount": 0
+					},
+					"_proto": "55d329c24bdc2d892f8b4567"
+				}
+			];
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Belt_B"});
+			const rigHandbookEntry = database.templates.handbook.Items.find((item) => {return item.Id === "5c0e6a1586f77404597b4965"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.76)); // 9918
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Belt_B"])
+				database.templates.prices["AddGearVanExt_Belt_B"] = dbItemHandbook.Price;
+			
+			// add trade offer
+			if (config.EnableTradeOffers)
+				core.createTraderOffer("AddGearVanExt_Belt_B", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 1);
 		}
 	}
 }
