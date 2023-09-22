@@ -390,7 +390,11 @@ class CustomItems {
 			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.14)); // -6.
 			
 			// other stats
-			dbItem._props.armorZone = ["Chest", "Stomach"];
+			if (rigItem._props.armorZone.includes("Stomach")) {
+				dbItem._props.armorZone = ["Chest", "Stomach"];
+			} else {
+				dbItem._props.armorZone = ["Chest"];
+			}
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Osprey_Armor"});
@@ -1385,6 +1389,57 @@ class CustomItems {
 			// add trade offer
 			if (config.EnableTradeOffers)
 				core.createTraderOffer("AddGearVanExt_Belt_B", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 1);
+		}
+		
+		if (itemConfig["Rigs"]["AddGearVanExt_Osprey_Protection_Armless_Rig"]) {
+			core.addItemRetexture("AddGearVanExt_Osprey_Protection_Armless_Rig", itemData["AddGearVanExt_Osprey_Protection_Armless_Rig"].BaseItemID, itemData["AddGearVanExt_Osprey_Protection_Armless_Rig"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Osprey_Protection_Armless_Rig"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Osprey_Protection_Armless_Rig"];
+			
+			// change weight
+			if (dbItem._props.Weight > 0) {
+				dbItem._props.Weight = dbItem._props.Weight - 2.5; // 10
+			} else {
+				dbItem._props.Weight = dbItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
+				dbItem._props.Width = 3;
+				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = dbItem._props.Width;
+				dbItem._props.Height = dbItem._props.Height;
+			}
+			
+			// change stats
+			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.09)); // 50
+			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.09)); // 50
+			if (dbItem._props.armorZone.includes("Stomach")) {
+				dbItem._props.armorZone = ["Chest", "Stomach"];
+			} else {
+				dbItem._props.armorZone = ["Chest"];
+			}
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent =  Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.25)); // -6
+			dbItem._props.mousePenalty = dbItem._props.mousePenalty;
+			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.40)); // -3
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Osprey_Protection_Armless_Rig"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.35)); // 125937.5
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Osprey_Protection_Armless_Rig"])
+				database.templates.prices["AddGearVanExt_Osprey_Protection_Armless_Rig"] = dbItemHandbook.Price;
+			
+			// add trade offer
+			/*
+			if (config.EnableTradeOffers)
+				core.createTraderOffer("AddGearVanExt_Osprey_Protection_Armless_Rig", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 4);
+			*/
 		}
 	}
 }

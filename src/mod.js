@@ -43,7 +43,8 @@ class Mod
 			"AddGearVanExt_Banshee_Armor",
 			"AddGearVanExt_ANA_M1_Armor",
 			"AddGearVanExt_Belt_A",
-			"AddGearVanExt_Belt_B"
+			"AddGearVanExt_Belt_B",
+			"AddGearVanExt_Osprey_Protection_Armless_Rig"
 		];
 		
 		// add retextures
@@ -125,7 +126,8 @@ class Mod
 				["AddGearVanExt_Redut_Full_Olive"],
 				["AddGearVanExt_Redut_Mobility_Woodland"],
 				["AddGearVanExt_Banshee_Armor"],
-				["AddGearVanExt_ANA_M1_Armor"]
+				["AddGearVanExt_ANA_M1_Armor"],
+				["AddGearVanExt_Osprey_Protection_Armless_Rig"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous

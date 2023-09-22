@@ -168,5 +168,10 @@
 		"Description": "Belt-B assault belt. This belt was adopted in 1989 and was used by the GRU Special Forces until the beginning of the 21st century. Usually used alongside Belt-A.",
 		"Name": "Belt-B assault belt (OD Green)",
 		"ShortName": "Belt-B"
-	}
+	},
+	"AddGearVanExt_Osprey_Protection_Armless_Rig": {
+        "Name": "CQC Osprey MK4A plate carrier (Protection-Light, MTP)",
+		"ShortName": "Osprey MK4A rig (PL)",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Protection preset is provided with heavy armor plates and the optimal number of pouches for ammunition, grenades and special equipment."
+    }
 }

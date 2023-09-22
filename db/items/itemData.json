@@ -168,5 +168,10 @@
 		"BaseItemID": "572b7adb24597762ae139821",
 		"BundlePath": "AddGearVanExt/Rigs/rig_belt_b.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Osprey_Protection_Armless_Rig": {
+		"BaseItemID": "60a3c68c37ea821725773ef5",
+		"BundlePath": "AddGearVanExt/Rigs/osprey_def_armless_rig.bundle",
+		"LootWeigthMult": 1
 	}
 }

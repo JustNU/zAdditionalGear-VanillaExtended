@@ -245,6 +245,19 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/Rigs/osprey_def_armless_rig_mesh.bundle",
+            "dependencyKeys": []
+        },
+		{
+            "key": "AddGearVanExt/Rigs/osprey_def_armless_rig.bundle",
+            "dependencyKeys": [
+				"AddGearVanExt/Rigs/osprey_def_armless_rig_mesh.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }
