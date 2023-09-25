@@ -173,5 +173,15 @@
 		"BaseItemID": "60a3c68c37ea821725773ef5",
 		"BundlePath": "AddGearVanExt/Rigs/osprey_def_armless_rig.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Osprey_Assault_Armor_Light": {
+		"BaseItemID": "5b44cf1486f77431723e3d05",
+		"BundlePath": "AddGearVanExt/ArmoredVests/osprey_assault_armor_light.bundle",
+		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Osprey_Protection_Armor_Light": {
+		"BaseItemID": "5b44d0de86f774503d30cba8",
+		"BundlePath": "AddGearVanExt/ArmoredVests/osprey_protection_armor_light.bundle",
+		"LootWeigthMult": 1
 	}
 }

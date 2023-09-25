@@ -1434,12 +1434,116 @@ class CustomItems {
 			// change flea price (if it has one)
 			if (database.templates.prices["AddGearVanExt_Osprey_Protection_Armless_Rig"])
 				database.templates.prices["AddGearVanExt_Osprey_Protection_Armless_Rig"] = dbItemHandbook.Price;
+		}
+		
+		if (itemConfig["Armored Vests"]["AddGearVanExt_Osprey_Protection_Armor_Light"]) {
+			core.addItemRetexture("AddGearVanExt_Osprey_Protection_Armor_Light", itemData["AddGearVanExt_Osprey_Protection_Armor_Light"].BaseItemID, itemData["AddGearVanExt_Osprey_Protection_Armor_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Osprey_Protection_Armor_Light"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Osprey_Protection_Armor_Light"];
+			const rigItem = database.templates.items["60a3c68c37ea821725773ef5"];
 			
-			// add trade offer
-			/*
-			if (config.EnableTradeOffers)
-				core.createTraderOffer("AddGearVanExt_Osprey_Protection_Armless_Rig", "5ac3b934156ae10c4430e83c", "5449016a4bdc2d6f028b456f", dbItemHandbook.Price, 4);
-			*/
+			// change weight
+			if (rigItem._props.Weight > 0) {
+				dbItem._props.Weight = rigItem._props.Weight - 0.7; // 10
+			} else {
+				dbItem._props.Weight = rigItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (rigItem._props.Width != 1 && rigItem._props.Height != 1) {
+				dbItem._props.Width = 3;
+				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = rigItem._props.Width;
+				dbItem._props.Height = rigItem._props.Height;
+			}
+			
+			// same stats as rig
+			dbItem._props.RepairCost = rigItem._props.RepairCost;
+			dbItem._props.CanSellOnRagfair = rigItem._props.CanSellOnRagfair;
+			dbItem._props.armorClass = rigItem._props.armorClass;
+			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
+			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
+			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			
+			// change durability
+			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
+			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.25)); // -6
+			dbItem._props.mousePenalty = Math.round(rigItem._props.mousePenalty - (rigItem._props.mousePenalty * 0.00)); // 
+			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.60)); // -2
+			
+			// other stats
+			if (rigItem._props.armorZone.includes("Stomach")) {
+				dbItem._props.armorZone = ["Chest", "Stomach"];
+			} else {
+				dbItem._props.armorZone = ["Chest"];
+			}
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Osprey_Protection_Armor_Light"});
+			const rigHandbookEntry = database.templates.handbook.Items.find((item) => {return item.Id === "60a3c68c37ea821725773ef5"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.05)); // 184062.5
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Osprey_Protection_Armor_Light"])
+				database.templates.prices["AddGearVanExt_Osprey_Protection_Armor_Light"] = dbItemHandbook.Price;
+		}
+		
+		if (itemConfig["Armored Vests"]["AddGearVanExt_Osprey_Assault_Armor_Light"]) {
+			core.addItemRetexture("AddGearVanExt_Osprey_Assault_Armor_Light", itemData["AddGearVanExt_Osprey_Assault_Armor_Light"].BaseItemID, itemData["AddGearVanExt_Osprey_Assault_Armor_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Osprey_Assault_Armor"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Osprey_Assault_Armor_Light"];
+			const rigItem = database.templates.items["60a3c70cde5f453f634816a3"];
+			
+			// change weight
+			if (rigItem._props.Weight > 0) {
+				dbItem._props.Weight = rigItem._props.Weight - 1.7; // 10.8
+			} else {
+				dbItem._props.Weight = rigItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (rigItem._props.Width != 1 && rigItem._props.Height != 1) {
+				dbItem._props.Width = 4;
+				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = rigItem._props.Width;
+				dbItem._props.Height = rigItem._props.Height;
+			}
+			
+			// same stats as rig
+			dbItem._props.RepairCost = rigItem._props.RepairCost;
+			dbItem._props.CanSellOnRagfair = rigItem._props.CanSellOnRagfair;
+			dbItem._props.armorClass = rigItem._props.armorClass;
+			dbItem._props.BluntThroughput = rigItem._props.BluntThroughput;
+			dbItem._props.ArmorMaterial = rigItem._props.ArmorMaterial;
+			dbItem._props.ArmorType = rigItem._props.ArmorType;
+			dbItem._props.Durability = rigItem._props.Durability;
+			dbItem._props.MaxDurability = rigItem._props.MaxDurability;
+			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
+			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			dbItem._props.armorZone = rigItem._props.armorZone;
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.20)); // -4
+			dbItem._props.mousePenalty = Math.round(rigItem._props.mousePenalty - (rigItem._props.mousePenalty * 0.00)); // unchanged
+			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.00)); //unchanged
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Osprey_Assault_Armor_Light"});
+			const rigHandbookEntry = database.templates.handbook.Items.find((item) => {return item.Id === "60a3c70cde5f453f634816a3"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(rigHandbookEntry.Price - (rigHandbookEntry.Price * 0.18)); // 122002.88
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Osprey_Assault_Armor_Light"])
+				database.templates.prices["AddGearVanExt_Osprey_Assault_Armor_Light"] = dbItemHandbook.Price;
 		}
 	}
 }

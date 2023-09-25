@@ -258,6 +258,32 @@
 				"shaders",
 				"cubemaps"
 			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/osprey_assault_armor_light_mesh.bundle",
+            "dependencyKeys": []
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/osprey_assault_armor_light.bundle",
+            "dependencyKeys": [
+				"AddGearVanExt/ArmoredVests/osprey_assault_armor_light_mesh.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/osprey_protection_armor_light_mesh.bundle",
+            "dependencyKeys": []
+        },
+		{
+            "key": "AddGearVanExt/ArmoredVests/osprey_protection_armor_light.bundle",
+            "dependencyKeys": [
+				"AddGearVanExt/ArmoredVests/osprey_protection_armor_light_mesh.bundle",
+				"assets/commonassets/physics/physicsmaterials.bundle",
+				"shaders",
+				"cubemaps"
+			]
         }
     ]
 }

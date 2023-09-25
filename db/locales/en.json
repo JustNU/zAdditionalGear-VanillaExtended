@@ -45,9 +45,9 @@
 		"Description": "In the second millennium, the equipment of a soldier received serious changes in view of new threats and tasks. A better level of protection was required, so the Russian army needed a reliable and functional body armor. In the mid-2000s, the MVD, which was later reorganized into the Russian Guard, received Bagariy bulletproof vests.\nBagariy was used both by ordinary soldiers of the internal troops, and in special forces."
     },
 	"AddGearVanExt_Osprey_Armor": {
-        "Name": "CQC Osprey MK4A armor (MTP)",
-		"ShortName": "Osprey MK4A armor",
-		"Description": "The Osprey plate carrier is actively used by the British army and specialists. Base kit."
+        "Name": "CQC Osprey Rhino armor (MTP)",
+		"ShortName": "Rhino armor",
+		"Description": "Rhino is based on the Osprey body armour system but without neck, shoulder and groin protection. Rhino has proved to be a very popular system as it has a simple but effective design."
     },
 	"AddGearVanExt_Osprey_Assault_Armor": {
         "Name": "CQC Osprey MK4A armor (Protection, MTP)",
@@ -173,5 +173,15 @@
         "Name": "CQC Osprey MK4A plate carrier (Protection-Light, MTP)",
 		"ShortName": "Osprey MK4A rig (PL)",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Protection preset is provided with heavy armor plates and the optimal number of pouches for ammunition, grenades and special equipment."
+    },
+	"AddGearVanExt_Osprey_Protection_Armor_Light": {
+        "Name": "CQC Osprey MK4A armor (Protection-Light, MTP)",
+		"ShortName": "Osprey MK4A armor (PL)",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Protection preset is provided with heavy armor plates."
+    },
+	"AddGearVanExt_Osprey_Assault_Armor_Light": {
+        "Name": "CQC Osprey MK4A plate carrier (Assault, MTP)",
+		"ShortName": "Osprey MK4A armor (AL)",
+		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with lighter armor plates."
     }
 }
