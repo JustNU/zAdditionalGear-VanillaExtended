@@ -183,5 +183,10 @@
 		"BaseItemID": "5b44d0de86f774503d30cba8",
 		"BundlePath": "AddGearVanExt/ArmoredVests/osprey_protection_armor_light.bundle",
 		"LootWeigthMult": 1
+	},
+	"AddGearVanExt_Rhino_Rig": {
+		"BaseItemID": "60a3c70cde5f453f634816a3",
+		"BundlePath": "AddGearVanExt/Rigs/rhino_rig.bundle",
+		"LootWeigthMult": 1
 	}
 }

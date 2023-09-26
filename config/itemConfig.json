@@ -39,7 +39,8 @@
 		"AddGearVanExt_6B5_16_Flora": true,
 		"AddGearVanExt_Belt_A": true,
 		"AddGearVanExt_Belt_B": true,
-		"AddGearVanExt_Osprey_Protection_Armless_Rig": true
+		"AddGearVanExt_Osprey_Protection_Armless_Rig": true,
+		"AddGearVanExt_Rhino_Rig": true
 	},
 	"Face Cover": {
 		"AddGearVanExt_Knight_Mask_No_Wires": true

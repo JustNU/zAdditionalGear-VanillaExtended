@@ -183,5 +183,10 @@
         "Name": "CQC Osprey MK4A armor (Assault, MTP)",
 		"ShortName": "Osprey MK4A armor (AL)",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with lighter armor plates."
+    },
+	"AddGearVanExt_Rhino_Rig": {
+        "Name": "CQC Rhino plate carrier (MTP)",
+		"ShortName": "Rhino rig",
+		"Description": "Rhino is based on the Osprey body armour system but without neck, shoulder and groin protection. Rhino has proved to be a very popular system as it has a simple but effective design."
     }
 }

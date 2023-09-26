@@ -381,8 +381,8 @@ class CustomItems {
 			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change durability
-			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
-			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
+			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.08)); // 55
+			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.08)); // 55
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.18)); // -9
@@ -1468,8 +1468,8 @@ class CustomItems {
 			dbItem._props.MaterialType = rigItem._props.MaterialType;
 			
 			// change durability
-			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
-			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.17)); // 50
+			dbItem._props.Durability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.09)); // 50
+			dbItem._props.MaxDurability = Math.round(rigItem._props.MaxDurability - (rigItem._props.MaxDurability * 0.09)); // 50
 			
 			// change debuffs
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.25)); // -6
@@ -1544,6 +1544,51 @@ class CustomItems {
 			// change flea price (if it has one)
 			if (database.templates.prices["AddGearVanExt_Osprey_Assault_Armor_Light"])
 				database.templates.prices["AddGearVanExt_Osprey_Assault_Armor_Light"] = dbItemHandbook.Price;
+		}
+		
+		if (itemConfig["Rigs"]["AddGearVanExt_Rhino_Rig"]) {
+			core.addItemRetexture("AddGearVanExt_Rhino_Rig", itemData["AddGearVanExt_Rhino_Rig"].BaseItemID, itemData["AddGearVanExt_Rhino_Rig"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_Rhino_Rig"].LootWeigthMult);
+			const dbItem = database.templates.items["AddGearVanExt_Rhino_Rig"];
+			
+			// change weight
+			if (dbItem._props.Weight > 0) {
+				dbItem._props.Weight = dbItem._props.Weight - 0.0; // 
+			} else {
+				dbItem._props.Weight = dbItem._props.Weight;
+			}
+			
+			// change inventory space
+			if (dbItem._props.Width != 1 && dbItem._props.Height != 1) {
+				dbItem._props.Width = 4;
+				dbItem._props.Height = 3;
+			} else {
+				dbItem._props.Width = dbItem._props.Width;
+				dbItem._props.Height = dbItem._props.Height;
+			}
+			
+			// change stats
+			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.09)); // 50
+			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.09)); // 50
+			if (dbItem._props.armorZone.includes("Stomach")) {
+				dbItem._props.armorZone = ["Chest", "Stomach"];
+			} else {
+				dbItem._props.armorZone = ["Chest"];
+			}
+			
+			// change debuffs
+			dbItem._props.speedPenaltyPercent =  Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.00)); //
+			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.00)); // 
+			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.00)); //
+			
+			// find handbook entry
+			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_Rhino_Rig"});
+			
+			// change handbook price
+			dbItemHandbook.Price = Math.round(dbItemHandbook.Price - (dbItemHandbook.Price * 0.00)); // 
+			
+			// change flea price (if it has one)
+			if (database.templates.prices["AddGearVanExt_Rhino_Rig"])
+				database.templates.prices["AddGearVanExt_Rhino_Rig"] = dbItemHandbook.Price;
 		}
 	}
 }

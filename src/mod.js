@@ -46,7 +46,8 @@ class Mod
 			"AddGearVanExt_Belt_B",
 			"AddGearVanExt_Osprey_Protection_Armless_Rig",
 			"AddGearVanExt_Osprey_Assault_Armor_Light",
-			"AddGearVanExt_Osprey_Protection_Armor_Light"
+			"AddGearVanExt_Osprey_Protection_Armor_Light",
+			"AddGearVanExt_Rhino_Rig"
 		];
 		
 		// add retextures
@@ -131,7 +132,8 @@ class Mod
 				["AddGearVanExt_ANA_M1_Armor"],
 				["AddGearVanExt_Osprey_Protection_Armless_Rig"],
 				["AddGearVanExt_Osprey_Assault_Armor_Light"],
-				["AddGearVanExt_Osprey_Protection_Armor_Light"]
+				["AddGearVanExt_Osprey_Protection_Armor_Light"],
+				["AddGearVanExt_Rhino_Rig"]
 			];
 			
 			// The survivalist path. Unprotected, but dangerous
