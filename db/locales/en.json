@@ -181,7 +181,7 @@
     },
 	"AddGearVanExt_Osprey_Assault_Armor_Light": {
         "Name": "CQC Osprey MK4A armor (Assault, MTP)",
-		"ShortName": "Osprey MK4A armor (AL)",
+		"ShortName": "Osprey MK4A armor (A)",
 		"Description": "The Osprey plate carrier is actively used by the British army and specialists. The Assault preset is provided with lighter armor plates."
     },
 	"AddGearVanExt_Rhino_Rig": {
