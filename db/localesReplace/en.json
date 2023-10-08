@@ -14,8 +14,7 @@
 	},
 	"545cdb794bdc2d3a198b456a": {
         "Name": "6B43 6A Zabralo-Sh body armor (full protection, Digital Flora)",
-		"ShortName": "6B43 Full",
-		"Description": "The 6B43 bulletproof vest of the 6A protection class (roughly equivalent to IIIA protection class) is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations. Full protection kit."
+		"ShortName": "6B43 Full"
     },
 	"5ab8dced86f774646209ec87": {
         "ShortName": "ANA M2 Rig"
@@ -40,8 +39,7 @@
 	},
 	"5ca2151486f774244a3b8d30": {
         "Name": "FORT Redut-M body armor (Mobility, Olive Green)",
-		"ShortName": "Redut Mobility",
-		"Description": "\"Redut-M\" is a modified version of the well-proven Redut body armor, which is in service of special units of the FSB. The vest is based on advanced technologies in the field of individual armor. Due to the optimized form of armor elements and the outer cover with a special damping-ventilation system, the Redut M armored vest has excellent functional qualities, which facilitates active actions, including those associated with the use of vehicles and in confined spaces. Medium protection kit for better mobility."
+		"ShortName": "Redut Mobility"
 	},
 	"5ca21c6986f77479963115a7": {
         "Name": "FORT Redut-T5 body armor (Woodland)",
@@ -51,7 +49,8 @@
         "Name": "FORT Defender-2 body armor (Olive Drab)"
 	},
 	"5c0e655586f774045612eeb2": {
-        "Name": "HighCom Trooper TFO body armor (USEC, Multicam)"
+        "Name": "HighCom Trooper TFO body armor (USEC, Multicam)",
+		"ShortName": "Trooper USEC",
 	},
 	"628bc7fb408e2b2e9c0801b1": {
         "Name": "Mystery Ranch NICE COMM 3 BVS frame system (Goons edition, tan)"
@@ -62,8 +61,7 @@
 	},
 	"60a283193cb70855c43a381d": {
         "Name": "NFM THOR Integrated Carrier body armor (full protection, tan)",
-		"ShortName": "THOR IC Full",
-		"Description": "The THOR full protection assault body armor equipped with soft and hard armor elements to protect against shrapnel and bullets of pistol and rifle calibers. Manufactured by NFM. Full protection kit."
+		"ShortName": "THOR IC Full"
 	},
 	"61bcc89aef0f505f0c6cd0fc": {
 		"ShortName": "Strandhogg rig"
