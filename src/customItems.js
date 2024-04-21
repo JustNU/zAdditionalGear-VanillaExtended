@@ -16,15 +16,21 @@ class CustomItems {
 				dbItem._props.Height = 3;
 				dbItem._props.Width = 3;
 			}
-			
-			// change durability
-			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.08)); // 60
-			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.08)); // 60
-			
+
 			// change debuffs
-			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.10)); // -10
-			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.23)); // -13
-			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.08)); // -11
+			//dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.10)); // -10
+			//dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.23)); // -13
+			//dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.08)); // -11
+			
+			// remove plates from specific slots
+			const replaceSlots = dbItem._props.Slots.filter((i) => i._name != "Groin")
+													.filter((i) => i._name != "Groin_back");
+			dbItem._props.Slots = replaceSlots;
+			
+			// remove plates from item preset
+			const replaceItemPreset = database.globals.ItemPresets[`AddGearVanExt_GEN4_Light_GlobalsItemPreset`]._items.filter((i) => i.slotId != "Groin")
+																													   .filter((i) => i.slotId != "Groin_back");
+			database.globals.ItemPresets[`AddGearVanExt_GEN4_Light_GlobalsItemPreset`]._items = replaceItemPreset;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_GEN4_Light"});

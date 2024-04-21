@@ -1,5 +1,5 @@
 {
 	"EnableTradeOffers": true,
 	"AddToBots": true,
-	"EnableQuestChanges": true
+	"EnableQuestChanges": false
 }

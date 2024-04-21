@@ -4,16 +4,6 @@
 		"ShortName": "Gen4 Light",
 		"Description": "The Improved Outer Tactical Vest (IOTV) Gen IV is designed to permit maximum freedom of movement required to assume correct firing positions with the agility to execute and maneuver tasks. Optimal design characteristics ensure the best possible weight distribution of both the ballistic body armor system as well as additional load bearing equipment, thus providing enhanced comfort, wear duration, and mobility. Barebones kit with no additional protection."
     },
-	"AddGearVanExt_6B23_2_Digital_Flora": {
-        "Name": "6B23-2 body armor (Digital Flora)",
-		"ShortName": "6B23-2 DF",
-		"Description": "The \"Zabralo-8\" main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
-    },
-	"AddGearVanExt_6B23_1_Mountain_Flora": {
-        "Name": "6B23-1 body armor (Mountain Flora)",
-		"ShortName": "6B23-1 MF",
-		"Description": "The \"Zabralo-8\" main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
-    },
 	"AddGearVanExt_6B43_Light": {
         "Name": "6B43 6A Zabralo-Sh body armor (light kit, Digital Flora)",
 		"ShortName": "6B43 Light",
