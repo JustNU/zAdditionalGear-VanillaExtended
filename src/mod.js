@@ -158,7 +158,7 @@ class Mod
 		}
 		
 		// deal with custom items
-		customItemsFunctions.handleCustomItems(database, core, config, itemConfig, itemData);
+		customItemsFunctions.handleCustomItems(database, core, config, itemConfig, itemData, jsonUtil);
 	}
 }
 

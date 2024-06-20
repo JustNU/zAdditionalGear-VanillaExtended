@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 class CustomItems {
-	static handleCustomItems(database, core, config, itemConfig, itemData)
+	static handleCustomItems(database, core, config, itemConfig, itemData, jsonUtil)
 	{
 		if (itemConfig["Armored Vests"]["AddGearVanExt_GEN4_Light"]) {
 			core.addItemRetexture("AddGearVanExt_GEN4_Light", itemData["AddGearVanExt_GEN4_Light"].BaseItemID, itemData["AddGearVanExt_GEN4_Light"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_GEN4_Light"].LootWeigthMult);
@@ -62,17 +62,22 @@ class CustomItems {
 				dbItem._props.Height = 3;
 			}
 			
-			// change durability
-			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.29)); // 60
-			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.29)); // 60
-			
 			// change debuffs
-			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.40)); // -21
-			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.29)); // -15
-			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.40)); // -16
+			//dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.40)); // -21
+			//dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.29)); // -15
+			//dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.40)); // -16
 			
-			// other stats
-			dbItem._props.armorZone = ["Chest", "Stomach"];
+			// remove plates from specific slots
+			const replaceSlots = dbItem._props.Slots.filter((i) => i._name != "Shoulder_l")
+													.filter((i) => i._name != "Shoulder_r")
+													.filter((i) => i._name != "Groin");
+			dbItem._props.Slots = replaceSlots;
+			
+			// remove plates from item preset
+			const replaceItemPreset = database.globals.ItemPresets[`AddGearVanExt_6B43_Light_GlobalsItemPreset`]._items.filter((i) => i.slotId != "Shoulder_l")
+																													   .filter((i) => i.slotId != "Shoulder_r")
+																													   .filter((i) => i.slotId != "Groin");
+			database.globals.ItemPresets[`AddGearVanExt_6B43_Light_GlobalsItemPreset`]._items = replaceItemPreset;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Light"});
@@ -98,15 +103,21 @@ class CustomItems {
 				dbItem._props.Width = 4;
 				dbItem._props.Height = 3;
 			}
-			
-			// change durability
-			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.12)); // 75
-			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.12)); // 75
-			
+
 			// change debuffs
+			/*
 			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.12)); // -31
 			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.24)); // -16
 			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.30)); // -19
+			*/
+			
+			// remove plates from specific slots
+			const replaceSlots = dbItem._props.Slots.filter((i) => i._name != "Groin");
+			dbItem._props.Slots = replaceSlots;
+			
+			// remove plates from item preset
+			const replaceItemPreset = database.globals.ItemPresets[`AddGearVanExt_6B43_Assault_GlobalsItemPreset`]._items.filter((i) => i.slotId != "Groin");
+			database.globals.ItemPresets[`AddGearVanExt_6B43_Assault_GlobalsItemPreset`]._items = replaceItemPreset;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Assault"});
@@ -133,17 +144,22 @@ class CustomItems {
 				dbItem._props.Height = 4;
 			}
 			
-			// change durability
-			dbItem._props.Durability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.24)); // 65
-			dbItem._props.MaxDurability = Math.round(dbItem._props.MaxDurability - (dbItem._props.MaxDurability * 0.24)); // 65
-			
 			// change debuffs
+			/*
 			dbItem._props.speedPenaltyPercent = Math.round(dbItem._props.speedPenaltyPercent - (dbItem._props.speedPenaltyPercent * 0.37)); // -22
 			dbItem._props.mousePenalty = Math.round(dbItem._props.mousePenalty - (dbItem._props.mousePenalty * 0.10)); // -19
 			dbItem._props.weaponErgonomicPenalty = Math.round(dbItem._props.weaponErgonomicPenalty - (dbItem._props.weaponErgonomicPenalty * 0.37)); // -17
+			*/
 			
-			// other stats
-			dbItem._props.armorZone = ["Chest", "Stomach"];
+			// remove plates from specific slots
+			const replaceSlots = dbItem._props.Slots.filter((i) => i._name != "Shoulder_l")
+													.filter((i) => i._name != "Shoulder_r");
+			dbItem._props.Slots = replaceSlots;
+			
+			// remove plates from item preset
+			const replaceItemPreset = database.globals.ItemPresets[`AddGearVanExt_6B43_Mobility_GlobalsItemPreset`]._items.filter((i) => i.slotId != "Shoulder_l")
+																													   .filter((i) => i.slotId != "Shoulder_r");
+			database.globals.ItemPresets[`AddGearVanExt_6B43_Mobility_GlobalsItemPreset`]._items = replaceItemPreset;
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_6B43_Mobility"});
@@ -157,7 +173,7 @@ class CustomItems {
 		}
 		
 		if (itemConfig["Armored Vests"]["AddGearVanExt_ANA_M2_Armor"]) {
-			core.addItemRetexture("AddGearVanExt_ANA_M2_Armor", itemData["AddGearVanExt_ANA_M2_Armor"].BaseItemID, itemData["AddGearVanExt_ANA_M2_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_ANA_M2_Armor"].LootWeigthMult);
+			core.addItemRetexture("AddGearVanExt_ANA_M2_Armor", itemData["AddGearVanExt_ANA_M2_Armor"].BaseItemID, itemData["AddGearVanExt_ANA_M2_Armor"].BundlePath, false, config.AddToBots, itemData["AddGearVanExt_ANA_M2_Armor"].LootWeigthMult, false);
 			const dbItem = database.templates.items["AddGearVanExt_ANA_M2_Armor"];
 			const rigItem = database.templates.items["5ab8dced86f774646209ec87"];
 			
@@ -189,11 +205,30 @@ class CustomItems {
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
 			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
 			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			dbItem._props.Slots = rigItem._props.Slots;
+			
+			// change slots parents id
+			for (const slotIndex in dbItem._props._Slots)
+			{
+				dbItem._props._Slots[slotIndex]._parent = "AddGearVanExt_ANA_M2_Armor";
+			}
+			
+			// add item preset
+			const newItemPreset = jsonUtil.clone(database.globals.ItemPresets["6571952aacb85662e7024c01"]);
+			newItemPreset._encyclopedia = "AddGearVanExt_ANA_M2_Armor";
+			newItemPreset._id = `AddGearVanExt_ANA_M2_Armor_GlobalsItemPreset`;
+			newItemPreset._items[0]._tpl = "AddGearVanExt_ANA_M2_Armor";
+			database.globals.ItemPresets[`AddGearVanExt_ANA_M2_Armor_GlobalsItemPreset`] = newItemPreset;
+			
+			//database.globals.ItemPresets[`AddGearVanExt_ANA_M2_Armor_GlobalsItemPreset`]._items = database.globals.ItemPresets[`6571952aacb85662e7024c01`]._items;
+			//database.globals.ItemPresets[`AddGearVanExt_ANA_M2_Armor_GlobalsItemPreset`]._items[0]._tpl = "AddGearVanExt_ANA_M2_Armor";
 			
 			// change debuffs
+			/*
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.25)); // -6
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
 			dbItem._props.weaponErgonomicPenalty = Math.round(rigItem._props.weaponErgonomicPenalty - (rigItem._props.weaponErgonomicPenalty * 0.50)); // -1
+			*/
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_ANA_M2_Armor"});
@@ -975,11 +1010,27 @@ class CustomItems {
 			dbItem._props.ArmorType = rigItem._props.ArmorType;
 			dbItem._props.Indestructibility = rigItem._props.Indestructibility;
 			dbItem._props.MaterialType = rigItem._props.MaterialType;
+			dbItem._props.Slots = rigItem._props.Slots;
+			
+			// change slots parents id
+			for (const slotIndex in dbItem._props._Slots)
+			{
+				dbItem._props._Slots[slotIndex]._parent = "AddGearVanExt_ANA_M1_Armor";
+			}
+			
+			// add item preset
+			const newItemPreset = jsonUtil.clone(database.globals.ItemPresets["6576616086f11bca4106d35f"]);
+			newItemPreset._encyclopedia = "AddGearVanExt_ANA_M1_Armor";
+			newItemPreset._id = `AddGearVanExt_ANA_M1_Armor_GlobalsItemPreset`;
+			newItemPreset._items[0]._tpl = "AddGearVanExt_ANA_M1_Armor";
+			database.globals.ItemPresets[`AddGearVanExt_ANA_M1_Armor_GlobalsItemPreset`] = newItemPreset;
 			
 			// change debuffs
+			/*
 			dbItem._props.speedPenaltyPercent = Math.round(rigItem._props.speedPenaltyPercent - (rigItem._props.speedPenaltyPercent * 0.4)); // -3
 			dbItem._props.mousePenalty = rigItem._props.mousePenalty;
 			dbItem._props.weaponErgonomicPenalty = rigItem._props.weaponErgonomicPenalty;
+			*/
 			
 			// find handbook entry
 			const dbItemHandbook = database.templates.handbook.Items.find((item) => {return item.Id === "AddGearVanExt_ANA_M1_Armor"});

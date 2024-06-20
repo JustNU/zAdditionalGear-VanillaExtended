@@ -1,11 +1,11 @@
 {
 	"Armored Vests": {
 		"AddGearVanExt_GEN4_Light": true,
-		"AddGearVanExt_6B43_Light": false,
-		"AddGearVanExt_6B43_Mobility": false,
-		"AddGearVanExt_6B43_Assault": false,
-		"AddGearVanExt_ANA_M1_Armor": false,
-		"AddGearVanExt_ANA_M2_Armor": false,
+		"AddGearVanExt_6B43_Light": true,
+		"AddGearVanExt_6B43_Mobility": true,
+		"AddGearVanExt_6B43_Assault": true,
+		"AddGearVanExt_ANA_M1_Armor": true,
+		"AddGearVanExt_ANA_M2_Armor": true,
 		"AddGearVanExt_Defender2_Light": false,
 		"AddGearVanExt_Bagariy_Armor": false,
 		"AddGearVanExt_Bagariy_Armor_No_Bear": false,
